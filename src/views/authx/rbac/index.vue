@@ -348,8 +348,8 @@
               </el-row>
               <el-row>
                 <el-col
-                  :span="12"
                   v-for="(role, index) in gvk_list"
+                  :span="12"
                   :key="index"
                   style="margin-bottom: 20px"
                 >
@@ -399,7 +399,6 @@
         >
       </span>
     </el-dialog>
-
     <!-- GVK管理--------------------------------------------------  -->
     <el-dialog
       :title="textMap[dialogStatus]"
@@ -496,9 +495,6 @@ export default {
       );
     },
   },
-  mounted() {
-    this.get_account_list();
-  },
   watch: {
     default_namespace: function (newVal, oldVal) {
       let nIndex = this.role_form.ns_list.findIndex((fni) => {
@@ -508,6 +504,9 @@ export default {
       // this.itemSel = this.role_form.ns_list[nIndex];
     },
     immediate: true,
+  },
+  mounted() {
+    this.get_account_list();
   },
   methods: {
     goback() {
@@ -690,8 +689,8 @@ export default {
       this.role_dialog = true;
       this.dialogStatus = "create_role";
 
-      let typeList = [];
-      for (let kind of this.gvk_list) {
+      const typeList = [];
+      for (const kind of this.gvk_list) {
         typeList.push({
           name: kind.name,
           verbs: [],
@@ -1053,9 +1052,9 @@ export default {
         "GroupVersionKindRule"
       ).then((resp) => {
         this.gvk_list = [];
-        let nameverbs = [];
+        const nameverbs = [];
         const kinds = [];
-        for (let kind of resp.items) {
+        for (const kind of resp.items) {
           const gvk = kind.spec.groupVersionKind;
           nameverbs.push(
             `${gvk.group ? gvk.group + "." : ""}${
@@ -1070,7 +1069,7 @@ export default {
           });
         }
         nameverbs.sort();
-        let sortKinds = [];
+        const sortKinds = [];
         for (let name of nameverbs) {
           const fIndex = kinds.findIndex((k) => {
             return k.name === name;
