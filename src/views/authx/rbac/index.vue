@@ -144,7 +144,12 @@
             disabled
             >新增</el-button
           >
-          <el-table :data="gvk_list" size="small" empty-text="啥也没有" border>
+          <el-table
+            :data="page_gvk_list"
+            size="small"
+            empty-text="啥也没有"
+            border
+          >
             <el-table-column prop="name" label="GVK"></el-table-column>
             <el-table-column prop="verbs" label="verbs">
               <template slot-scope="scoped">
@@ -482,6 +487,14 @@ export default {
       gvk_form: {},
       gvk_form_rules: {},
     };
+  },
+  computed: {
+    page_gvk_list: function () {
+      return this.gvk_list.slice(
+        (this.currentPage - 1) * 10,
+        this.currentPage * 10
+      );
+    },
   },
   mounted() {
     this.get_account_list();
