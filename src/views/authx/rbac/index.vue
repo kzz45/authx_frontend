@@ -184,6 +184,7 @@
                     type="danger"
                     icon="el-icon-delete"
                     size="mini"
+                    disabled
                   ></el-button>
                 </el-popconfirm>
               </template>
@@ -206,8 +207,6 @@
     <el-dialog
       :title="textMap[dialogStatus]"
       :visible.sync="account_dialog"
-      :show-close="true"
-      :close-on-click-modal="false"
       width="50%"
     >
       <el-form
@@ -269,8 +268,7 @@
     <el-dialog
       :title="textMap[dialogStatus]"
       :visible.sync="role_dialog"
-      :show-close="true"
-      width="60%"
+      width="70%"
     >
       <el-form
         ref="role_form_refs"
@@ -301,7 +299,7 @@
               <el-button
                 size="small"
                 style="margin-left: 10px"
-                @click="addTab()"
+                @click="add_namespace()"
                 >添加</el-button
               >
             </el-form-item>
@@ -309,14 +307,14 @@
         </el-row>
         <el-row>
           <el-tabs
-            closable
-            style="margin-left: 100px"
             v-model="default_namespace"
-            @tab-remove="removeTab"
+            @tab-remove="remove_namespace"
+            style="margin-left: 100px"
+            closable
           >
             <el-tab-pane
-              v-for="(item, index) in role_form.ns_list"
-              :key="index"
+              v-for="item in role_form.ns_list"
+              :key="item.namespace"
               :name="item.namespace || '默认'"
               :label="item.namespace || '默认'"
             >
@@ -339,8 +337,8 @@
                     >复制</el-button
                   >
                   <el-button
-                    size="mini"
                     v-show="can_paste"
+                    size="mini"
                     style="margin-left: 20px; vertical-align: middle"
                     >粘贴</el-button
                   >
@@ -348,7 +346,7 @@
               </el-row>
               <el-row>
                 <el-col
-                  v-for="(role, index) in gvk_list"
+                  v-for="(tempRole, index) in gvk_list"
                   :span="12"
                   :key="index"
                   style="margin-bottom: 20px"
@@ -371,7 +369,7 @@
                         );
                       }
                     "
-                    >{{ role.name }}
+                    >{{ tempRole.name }}
                   </el-checkbox>
 
                   <el-checkbox-group
@@ -380,9 +378,9 @@
                     style="margin-left: 20px"
                   >
                     <el-checkbox-button
-                      v-for="verb in role.verbs"
-                      :label="verb"
+                      v-for="verb in tempRole.verbs"
                       :key="verb"
+                      :label="verb"
                       >{{ verb }}
                     </el-checkbox-button>
                   </el-checkbox-group>
@@ -403,9 +401,6 @@
     <el-dialog
       :title="textMap[dialogStatus]"
       :visible.sync="gvk_dialog"
-      :show-close="true"
-      :close-on-click-modal="false"
-      :close-on-press-escape="false"
       width="50%"
     >
       <el-form
@@ -497,11 +492,12 @@ export default {
   },
   watch: {
     default_namespace: function (newVal, oldVal) {
+      // console.log(newVal, "===============");
       let nIndex = this.role_form.ns_list.findIndex((fni) => {
         return fni.namespace === newVal;
       });
       this.checkedAll = false;
-      // this.itemSel = this.role_form.ns_list[nIndex];
+      this.itemSel = this.role_form.ns_list[nIndex];
     },
     immediate: true,
   },
@@ -688,7 +684,7 @@ export default {
     create_role() {
       this.role_dialog = true;
       this.dialogStatus = "create_role";
-
+      this.default_namespace = "默认";
       const typeList = [];
       for (const kind of this.gvk_list) {
         typeList.push({
@@ -707,56 +703,51 @@ export default {
       this.role_dialog = true;
       this.dialogStatus = "update_role";
       this.role_form = Object.assign({}, row);
-      console.log(this.role_form, "====");
-      // let vbs = [];
-      // for (let roleNs of this.role_form.ns_list) {
-      //   let npType = [];
-      //   for (let kind of this.gvk_list) {
-      //     npType.push({
-      //       name: kind.name,
-      //       verbs: [],
-      //     });
-      //   }
-      //   vbs.push({
-      //     namespace: roleNs.namespace,
-      //     type: npType,
-      //   });
-      // }
-      // for (let nsRole of vbs) {
-      //   let editIndex = this.role_form.ns_list.findIndex((val) => {
-      //     return val.namespace === nsRole.namespace;
-      //   });
-      //   for (let oneType of nsRole.type) {
-      //     for (let editRes of this.role_form.ns_list[editIndex].type) {
-      //       if (oneType.name === editRes.res) {
-      //         oneType.verbs = editRes.permission;
-      //       }
-      //     }
-      //   }
-      // }
+      let vbs = [];
+      for (let roleNs of this.role_form.ns_list) {
+        let npType = [];
+        for (let kind of this.gvk_list) {
+          npType.push({
+            name: kind.name,
+            verbs: [],
+          });
+        }
+        vbs.push({
+          namespace: roleNs.namespace,
+          type: npType,
+        });
+      }
+      for (let nsRole of vbs) {
+        let editIndex = this.role_form.ns_list.findIndex((val) => {
+          return val.namespace === nsRole.namespace;
+        });
+        for (let oneType of nsRole.type) {
+          for (let editRes of this.role_form.ns_list[editIndex].type) {
+            if (oneType.name === editRes.gvk) {
+              oneType.verbs = editRes.verbs;
+            }
+          }
+        }
+      }
 
-      // this.role_form.ns_list = vbs;
-      // if (vbs.length > 0) {
-      //   this.default_namespace = vbs[0].namespace || "默认";
-      // }
-      // const vbs = this.role_form.ns_list;
-      // for (let ns of vbs) {
-      //   // console.log(ns);
-      //   for (let vbIndex in ns.type) {
-      //     // console.log(vbIndex, ns.type, "==========", this.gvk_list);
-
-      //     if (
-      //       this.verbCompare(
-      //         ns.type[vbIndex].verbs,
-      //         this.gvk_list[Number(vbIndex)].verbs
-      //       )
-      //     ) {
-      //       ns.type[vbIndex].checked = true;
-      //     } else {
-      //       ns.type[vbIndex].checked = false;
-      //     }
-      //   }
-      // }
+      this.role_form.ns_list = vbs;
+      if (vbs.length > 0) {
+        this.default_namespace = vbs[0].namespace || "默认";
+      }
+      for (let ns of vbs) {
+        for (let vbIndex in ns.type) {
+          if (
+            this.verbCompare(
+              ns.type[vbIndex].verbs,
+              this.gvk_list[Number(vbIndex)].verbs
+            )
+          ) {
+            ns.type[vbIndex].checked = true;
+          } else {
+            ns.type[vbIndex].checked = false;
+          }
+        }
+      }
       // console.log(this.role_form, "====");
     },
     verbCompare(vera, verb) {
@@ -859,7 +850,7 @@ export default {
     copy_verbs() {
       this.can_paste = true;
     },
-    addTab() {
+    add_namespace() {
       if (
         this.role_form.namespace === undefined ||
         this.role_form.namespace === ""
@@ -884,7 +875,7 @@ export default {
       this.default_namespace = this.role_form.namespace;
       this.role_form.namespace = "";
     },
-    removeTab(tab) {
+    remove_namespace(tab) {
       const removeIndex = this.role_form.ns_list.findIndex((val) => {
         return val.namespace === tab;
       });
@@ -981,51 +972,67 @@ export default {
             });
           });
       } else if (this.dialogStatus === "update_role") {
-        console.log(this.role_form, "=====");
-        // const gvkVerbs = this.role_form.ns_list;
-        // let rules = [];
-        // for (let gvkverb of gvkVerbs) {
-        //   for (let allverb of gvkverb.type) {
-        //     const gvk = allverb.name.split(".");
-        //     let g = "",
-        //       v = "",
-        //       k = "";
-        //     if (gvk.length === 3) {
-        //       (g = gvk[0]), (v = gvk[1]), (k = gvk[2]);
-        //     } else if (gvk.length > 3) {
-        //       (k = gvk[gvk.length - 1]), (v = gvk[gvk.length - 2]);
-        //       let group = "";
-        //       for (let sar = 0; sar < gvk.length - 2; sar++) {
-        //         group = group + gvk[sar] + ".";
-        //       }
-        //       g = group.substring(0, group.length - 1);
-        //     } else if (gvk.length === 2) {
-        //       (g = ""), (v = gvk[0]), (k = gvk[1]);
-        //     } else {
-        //       k = gvk[0];
-        //     }
+        const gvkVerbs = this.role_form.ns_list;
+        let rules = [];
+        for (let gvkverb of gvkVerbs) {
+          for (let allverb of gvkverb.type) {
+            const gvk = allverb.name.split(".");
+            let g = "",
+              v = "",
+              k = "";
+            if (gvk.length === 3) {
+              (g = gvk[0]), (v = gvk[1]), (k = gvk[2]);
+            } else if (gvk.length > 3) {
+              (k = gvk[gvk.length - 1]), (v = gvk[gvk.length - 2]);
+              let group = "";
+              for (let sar = 0; sar < gvk.length - 2; sar++) {
+                group = group + gvk[sar] + ".";
+              }
+              g = group.substring(0, group.length - 1);
+            } else if (gvk.length === 2) {
+              (g = ""), (v = gvk[0]), (k = gvk[1]);
+            } else {
+              k = gvk[0];
+            }
 
-        //     if (gvkVerbs.length === 1 || gvkverb.namespace) {
-        //       rules.push({
-        //         namespace: gvkverb.namespace,
-        //         groupVersionKind: { group: g, version: v, kind: k },
-        //         verbs: allverb.verbs,
-        //       });
-        //     }
-        //   }
-        // }
-        // console.log(rules, "=====");
-        // const update_role_data = {
-        //   metadata: {
-        //     namespace: this.appId,
-        //     name: this.role_form.name,
-        //   },
-        //   spec: {
-        //     desc: this.role_form.desc,
-        //     rules,
-        //   },
-        // };
+            if (gvkVerbs.length === 1 || gvkverb.namespace) {
+              rules.push({
+                namespace: gvkverb.namespace,
+                groupVersionKind: { group: g, version: v, kind: k },
+                verbs: allverb.verbs,
+              });
+            }
+          }
+        }
+
+        const update_role_data = {
+          metadata: {
+            namespace: this.appId,
+            name: this.role_form.name,
+          },
+          spec: {
+            desc: this.role_form.desc,
+            rules,
+          },
+        };
         // console.log(update_role_data, "=====");
+        rbacApi(
+          "ClusterRoleList",
+          "/clusterrole/update",
+          update_role_data,
+          "",
+          "ClusterRole"
+        )
+          .then((resp) => {
+            this.role_dialog = false;
+            this.get_role_list();
+          })
+          .catch((err) => {
+            this.$message({
+              type: "error",
+              message: err.message,
+            });
+          });
       }
     },
     // gvk管理--------------------------------------------------
@@ -1052,11 +1059,11 @@ export default {
         "GroupVersionKindRule"
       ).then((resp) => {
         this.gvk_list = [];
-        const nameverbs = [];
         const kinds = [];
+        const nameLabels = [];
         for (const kind of resp.items) {
           const gvk = kind.spec.groupVersionKind;
-          nameverbs.push(
+          nameLabels.push(
             `${gvk.group ? gvk.group + "." : ""}${
               gvk.version ? gvk.version + "." : ""
             }${gvk.kind}`
@@ -1068,9 +1075,9 @@ export default {
             verbs: kind.spec.verbs,
           });
         }
-        nameverbs.sort();
+        nameLabels.sort();
         const sortKinds = [];
-        for (let name of nameverbs) {
+        for (let name of nameLabels) {
           const fIndex = kinds.findIndex((k) => {
             return k.name === name;
           });
