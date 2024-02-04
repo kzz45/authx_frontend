@@ -39,7 +39,6 @@ module.exports = {
     proxy: {
       "/": {
         target: "https://127.0.0.1:8087",
-        // target: "https://igameconsole.yingxiong.com:10001",
         changeOrigin: true,
         ws: true,
         // rewrite: (path) => path.replace(/^\/api/, '')

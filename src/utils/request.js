@@ -33,7 +33,7 @@ async function getService() {
       const ab = await response.data.arrayBuffer();
       const buffer = new Uint8Array(ab);
       let resp = requestproto.Response.decode(buffer);
-      console.log(resp.code, "======");
+      // console.log(resp.code, "======");
       if (resp.code === 401) {
         // router.push({ path: `/login` });
         // console.log("401", resp);
