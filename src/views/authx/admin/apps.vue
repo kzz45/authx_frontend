@@ -71,9 +71,6 @@
     <el-dialog
       :title="textMap[dialogStatus]"
       :visible.sync="app_dialog"
-      :show-close="true"
-      :close-on-click-modal="false"
-      :close-on-press-escape="false"
       width="50%"
     >
       <el-form

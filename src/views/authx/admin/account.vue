@@ -64,9 +64,6 @@
     <el-dialog
       :title="textMap[dialogStatus]"
       :visible.sync="account_dialog"
-      :show-close="true"
-      :close-on-click-modal="false"
-      :close-on-press-escape="false"
       width="50%"
     >
       <el-form
@@ -167,6 +164,7 @@ export default {
     craete_account() {
       this.account_dialog = true;
       this.dialogStatus = "create_account";
+      this.account_form = Object.assign({}, "");
       this.get_app_list();
     },
     update_account(row) {

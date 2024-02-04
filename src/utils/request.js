@@ -33,10 +33,10 @@ async function getService() {
       const ab = await response.data.arrayBuffer();
       const buffer = new Uint8Array(ab);
       let resp = requestproto.Response.decode(buffer);
-      // console.log(resp, "======");
+      console.log(resp.code, "======");
       if (resp.code === 401) {
         // router.push({ path: `/login` });
-        console.log("401", resp);
+        // console.log("401", resp);
         Message({
           message: resp.message,
           type: "error",
@@ -44,7 +44,7 @@ async function getService() {
         });
       }
       if (resp.code === 1) {
-        console.log("1", resp);
+        // console.log("1", resp);
         Message({
           message: resp.message,
           type: "error",

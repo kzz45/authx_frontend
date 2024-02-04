@@ -86,7 +86,11 @@ const actions = {
   logout({ commit, state }) {
     // removeToken(); // must remove  token  first
     // removeTokenExpire();
-    localStorage.clear()
+    // localStorage.clear()
+    localStorage.removeItem("Token");
+    localStorage.removeItem("Token_Expitation");
+    localStorage.removeItem("appId");
+    localStorage.removeItem("appName");
     resetRouter();
     commit("RESET_STATE");
     // resolve();

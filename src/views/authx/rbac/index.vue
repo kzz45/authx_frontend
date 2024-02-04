@@ -242,7 +242,12 @@
           </el-col>
           <el-col :span="12">
             <el-form-item label="角色" prop="role">
-              <el-select v-model="account_form.role" placeholder="" filterable>
+              <el-select
+                v-model="account_form.role"
+                placeholder=""
+                filterable
+                clearable
+              >
                 <el-option
                   v-for="(item, index) in role_list"
                   :key="index"
@@ -492,7 +497,6 @@ export default {
   },
   watch: {
     default_namespace: function (newVal, oldVal) {
-      // console.log(newVal, "===============");
       let nIndex = this.role_form.ns_list.findIndex((fni) => {
         return fni.namespace === newVal;
       });
@@ -531,9 +535,7 @@ export default {
     create_account() {
       this.account_dialog = true;
       this.dialogStatus = "create_account";
-      this.role_form.name = "";
-      this.role_form.desc = "";
-      this.role_form.namespace = "";
+      this.account_form = Object.assign({}, "");
       this.get_role_list();
     },
     update_account(row) {
@@ -684,6 +686,7 @@ export default {
     create_role() {
       this.role_dialog = true;
       this.dialogStatus = "create_role";
+      this.role_form = Object.assign({}, "");
       this.default_namespace = "默认";
       const typeList = [];
       for (const kind of this.gvk_list) {
