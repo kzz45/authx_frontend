@@ -34,20 +34,20 @@ export const github = $root.github = (() => {
              */
             const kzz45 = {};
 
-            kzz45.discovery = (function() {
+            kzz45.neverdown = (function() {
 
                 /**
-                 * Namespace discovery.
+                 * Namespace neverdown.
                  * @memberof github.com.kzz45
                  * @namespace
                  */
-                const discovery = {};
+                const neverdown = {};
 
-                discovery.pkg = (function() {
+                neverdown.pkg = (function() {
 
                     /**
                      * Namespace pkg.
-                     * @memberof github.com.kzz45.discovery
+                     * @memberof github.com.kzz45.neverdown
                      * @namespace
                      */
                     const pkg = {};
@@ -56,7 +56,7 @@ export const github = $root.github = (() => {
 
                         /**
                          * Namespace apis.
-                         * @memberof github.com.kzz45.discovery.pkg
+                         * @memberof github.com.kzz45.neverdown.pkg
                          * @namespace
                          */
                         const apis = {};
@@ -65,7 +65,7 @@ export const github = $root.github = (() => {
 
                             /**
                              * Namespace rbac.
-                             * @memberof github.com.kzz45.discovery.pkg.apis
+                             * @memberof github.com.kzz45.neverdown.pkg.apis
                              * @namespace
                              */
                             const rbac = {};
@@ -74,7 +74,7 @@ export const github = $root.github = (() => {
 
                                 /**
                                  * Namespace v1.
-                                 * @memberof github.com.kzz45.discovery.pkg.apis.rbac
+                                 * @memberof github.com.kzz45.neverdown.pkg.apis.rbac
                                  * @namespace
                                  */
                                 const v1 = {};
@@ -83,7 +83,7 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an AccountMeta.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IAccountMeta
                                      * @property {string|null} [username] AccountMeta username
                                      * @property {string|null} [nickname] AccountMeta nickname
@@ -93,11 +93,11 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Constructs a new AccountMeta.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an AccountMeta.
                                      * @implements IAccountMeta
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta=} [properties] Properties to set
                                      */
                                     function AccountMeta(properties) {
                                         if (properties)
@@ -109,7 +109,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AccountMeta username.
                                      * @member {string} username
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @instance
                                      */
                                     AccountMeta.prototype.username = "";
@@ -117,7 +117,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AccountMeta nickname.
                                      * @member {string} nickname
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @instance
                                      */
                                     AccountMeta.prototype.nickname = "";
@@ -125,7 +125,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AccountMeta password.
                                      * @member {string} password
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @instance
                                      */
                                     AccountMeta.prototype.password = "";
@@ -133,7 +133,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AccountMeta email.
                                      * @member {string} email
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @instance
                                      */
                                     AccountMeta.prototype.email = "";
@@ -141,21 +141,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new AccountMeta instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta} AccountMeta instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta} AccountMeta instance
                                      */
                                     AccountMeta.create = function create(properties) {
                                         return new AccountMeta(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified AccountMeta message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.verify|verify} messages.
+                                     * Encodes the specified AccountMeta message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta} message AccountMeta message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta} message AccountMeta message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -174,11 +174,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified AccountMeta message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.verify|verify} messages.
+                                     * Encodes the specified AccountMeta message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta} message AccountMeta message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta} message AccountMeta message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -189,18 +189,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AccountMeta message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta} AccountMeta
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta} AccountMeta
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     AccountMeta.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -231,10 +231,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AccountMeta message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta} AccountMeta
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta} AccountMeta
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -247,7 +247,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an AccountMeta message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -273,15 +273,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an AccountMeta message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta} AccountMeta
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta} AccountMeta
                                      */
                                     AccountMeta.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta();
                                         if (object.username != null)
                                             message.username = String(object.username);
                                         if (object.nickname != null)
@@ -296,9 +296,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an AccountMeta message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta} message AccountMeta
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta} message AccountMeta
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -326,7 +326,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this AccountMeta to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -337,7 +337,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for AccountMeta
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -346,7 +346,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta";
                                     };
 
                                     return AccountMeta;
@@ -356,19 +356,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an App.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IApp
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null} [metadata] App metadata
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppSpec|null} [spec] App spec
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppSpec|null} [spec] App spec
                                      */
 
                                     /**
                                      * Constructs a new App.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an App.
                                      * @implements IApp
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IApp=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IApp=} [properties] Properties to set
                                      */
                                     function App(properties) {
                                         if (properties)
@@ -380,15 +380,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * App metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @instance
                                      */
                                     App.prototype.metadata = null;
 
                                     /**
                                      * App spec.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppSpec|null|undefined} spec
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppSpec|null|undefined} spec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @instance
                                      */
                                     App.prototype.spec = null;
@@ -396,21 +396,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new App instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IApp=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.App} App instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IApp=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.App} App instance
                                      */
                                     App.create = function create(properties) {
                                         return new App(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified App message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.App.verify|verify} messages.
+                                     * Encodes the specified App message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IApp} message App message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IApp} message App message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -420,16 +420,16 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && Object.hasOwnProperty.call(message, "metadata"))
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.spec != null && Object.hasOwnProperty.call(message, "spec"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified App message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.App.verify|verify} messages.
+                                     * Encodes the specified App message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IApp} message App message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IApp} message App message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -440,18 +440,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an App message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.App} App
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.App} App
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     App.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -460,7 +460,7 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.decode(reader, reader.uint32());
+                                                    message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             default:
@@ -474,10 +474,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an App message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.App} App
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.App} App
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -490,7 +490,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an App message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -504,7 +504,7 @@ export const github = $root.github = (() => {
                                                 return "metadata." + error;
                                         }
                                         if (message.spec != null && message.hasOwnProperty("spec")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.verify(message.spec);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.verify(message.spec);
                                             if (error)
                                                 return "spec." + error;
                                         }
@@ -514,24 +514,24 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an App message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.App} App
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.App} App
                                      */
                                     App.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.App.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.fromObject(object.metadata);
                                         }
                                         if (object.spec != null) {
                                             if (typeof object.spec !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.App.spec: object expected");
-                                            message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.fromObject(object.spec);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.spec: object expected");
+                                            message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.fromObject(object.spec);
                                         }
                                         return message;
                                     };
@@ -539,9 +539,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an App message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.App} message App
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.App} message App
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -556,14 +556,14 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && message.hasOwnProperty("metadata"))
                                             object.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.toObject(message.metadata, options);
                                         if (message.spec != null && message.hasOwnProperty("spec"))
-                                            object.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.toObject(message.spec, options);
+                                            object.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.toObject(message.spec, options);
                                         return object;
                                     };
 
                                     /**
                                      * Converts this App to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -574,7 +574,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for App
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.App
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.App
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -583,7 +583,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.App";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.App";
                                     };
 
                                     return App;
@@ -593,19 +593,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an AppList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IAppList
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null} [metadata] AppList metadata
-                                     * @property {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IApp>|null} [items] AppList items
+                                     * @property {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IApp>|null} [items] AppList items
                                      */
 
                                     /**
                                      * Constructs a new AppList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an AppList.
                                      * @implements IAppList
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppList=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppList=} [properties] Properties to set
                                      */
                                     function AppList(properties) {
                                         this.items = [];
@@ -618,15 +618,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppList metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @instance
                                      */
                                     AppList.prototype.metadata = null;
 
                                     /**
                                      * AppList items.
-                                     * @member {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IApp>} items
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @member {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IApp>} items
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @instance
                                      */
                                     AppList.prototype.items = $util.emptyArray;
@@ -634,21 +634,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new AppList instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppList=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList} AppList instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppList=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList} AppList instance
                                      */
                                     AppList.create = function create(properties) {
                                         return new AppList(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified AppList message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList.verify|verify} messages.
+                                     * Encodes the specified AppList message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppList} message AppList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppList} message AppList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -659,16 +659,16 @@ export const github = $root.github = (() => {
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.items != null && message.items.length)
                                             for (let i = 0; i < message.items.length; ++i)
-                                                $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                                $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified AppList message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList.verify|verify} messages.
+                                     * Encodes the specified AppList message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppList} message AppList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppList} message AppList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -679,18 +679,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppList message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList} AppList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList} AppList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     AppList.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -701,7 +701,7 @@ export const github = $root.github = (() => {
                                             case 2: {
                                                     if (!(message.items && message.items.length))
                                                         message.items = [];
-                                                    message.items.push($root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App.decode(reader, reader.uint32()));
+                                                    message.items.push($root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.decode(reader, reader.uint32()));
                                                     break;
                                                 }
                                             default:
@@ -715,10 +715,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppList message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList} AppList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList} AppList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -731,7 +731,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an AppList message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -748,7 +748,7 @@ export const github = $root.github = (() => {
                                             if (!Array.isArray(message.items))
                                                 return "items: array expected";
                                             for (let i = 0; i < message.items.length; ++i) {
-                                                let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App.verify(message.items[i]);
+                                                let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.verify(message.items[i]);
                                                 if (error)
                                                     return "items." + error;
                                             }
@@ -759,28 +759,28 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an AppList message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList} AppList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList} AppList
                                      */
                                     AppList.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.fromObject(object.metadata);
                                         }
                                         if (object.items) {
                                             if (!Array.isArray(object.items))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList.items: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList.items: array expected");
                                             message.items = [];
                                             for (let i = 0; i < object.items.length; ++i) {
                                                 if (typeof object.items[i] !== "object")
-                                                    throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList.items: object expected");
-                                                message.items[i] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App.fromObject(object.items[i]);
+                                                    throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList.items: object expected");
+                                                message.items[i] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.fromObject(object.items[i]);
                                             }
                                         }
                                         return message;
@@ -789,9 +789,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an AppList message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList} message AppList
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList} message AppList
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -808,7 +808,7 @@ export const github = $root.github = (() => {
                                         if (message.items && message.items.length) {
                                             object.items = [];
                                             for (let j = 0; j < message.items.length; ++j)
-                                                object.items[j] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.App.toObject(message.items[j], options);
+                                                object.items[j] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.App.toObject(message.items[j], options);
                                         }
                                         return object;
                                     };
@@ -816,7 +816,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this AppList to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -827,7 +827,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for AppList
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -836,7 +836,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.AppList";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppList";
                                     };
 
                                     return AppList;
@@ -846,19 +846,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an AppServiceAccount.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IAppServiceAccount
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null} [metadata] AppServiceAccount metadata
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountSpec|null} [spec] AppServiceAccount spec
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountSpec|null} [spec] AppServiceAccount spec
                                      */
 
                                     /**
                                      * Constructs a new AppServiceAccount.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an AppServiceAccount.
                                      * @implements IAppServiceAccount
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccount=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccount=} [properties] Properties to set
                                      */
                                     function AppServiceAccount(properties) {
                                         if (properties)
@@ -870,15 +870,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppServiceAccount metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @instance
                                      */
                                     AppServiceAccount.prototype.metadata = null;
 
                                     /**
                                      * AppServiceAccount spec.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountSpec|null|undefined} spec
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountSpec|null|undefined} spec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @instance
                                      */
                                     AppServiceAccount.prototype.spec = null;
@@ -886,21 +886,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new AppServiceAccount instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccount=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccount=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount instance
                                      */
                                     AppServiceAccount.create = function create(properties) {
                                         return new AppServiceAccount(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified AppServiceAccount message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.verify|verify} messages.
+                                     * Encodes the specified AppServiceAccount message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccount} message AppServiceAccount message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccount} message AppServiceAccount message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -910,16 +910,16 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && Object.hasOwnProperty.call(message, "metadata"))
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.spec != null && Object.hasOwnProperty.call(message, "spec"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified AppServiceAccount message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.verify|verify} messages.
+                                     * Encodes the specified AppServiceAccount message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccount} message AppServiceAccount message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccount} message AppServiceAccount message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -930,18 +930,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppServiceAccount message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     AppServiceAccount.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -950,7 +950,7 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.decode(reader, reader.uint32());
+                                                    message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             default:
@@ -964,10 +964,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppServiceAccount message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -980,7 +980,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an AppServiceAccount message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -994,7 +994,7 @@ export const github = $root.github = (() => {
                                                 return "metadata." + error;
                                         }
                                         if (message.spec != null && message.hasOwnProperty("spec")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.verify(message.spec);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.verify(message.spec);
                                             if (error)
                                                 return "spec." + error;
                                         }
@@ -1004,24 +1004,24 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an AppServiceAccount message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount} AppServiceAccount
                                      */
                                     AppServiceAccount.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.fromObject(object.metadata);
                                         }
                                         if (object.spec != null) {
                                             if (typeof object.spec !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.spec: object expected");
-                                            message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.fromObject(object.spec);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.spec: object expected");
+                                            message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.fromObject(object.spec);
                                         }
                                         return message;
                                     };
@@ -1029,9 +1029,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an AppServiceAccount message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount} message AppServiceAccount
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount} message AppServiceAccount
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -1046,14 +1046,14 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && message.hasOwnProperty("metadata"))
                                             object.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.toObject(message.metadata, options);
                                         if (message.spec != null && message.hasOwnProperty("spec"))
-                                            object.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.toObject(message.spec, options);
+                                            object.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.toObject(message.spec, options);
                                         return object;
                                     };
 
                                     /**
                                      * Converts this AppServiceAccount to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -1064,7 +1064,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for AppServiceAccount
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -1073,7 +1073,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount";
                                     };
 
                                     return AppServiceAccount;
@@ -1083,19 +1083,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an AppServiceAccountList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IAppServiceAccountList
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null} [metadata] AppServiceAccountList metadata
-                                     * @property {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccount>|null} [items] AppServiceAccountList items
+                                     * @property {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccount>|null} [items] AppServiceAccountList items
                                      */
 
                                     /**
                                      * Constructs a new AppServiceAccountList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an AppServiceAccountList.
                                      * @implements IAppServiceAccountList
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountList=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountList=} [properties] Properties to set
                                      */
                                     function AppServiceAccountList(properties) {
                                         this.items = [];
@@ -1108,15 +1108,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppServiceAccountList metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @instance
                                      */
                                     AppServiceAccountList.prototype.metadata = null;
 
                                     /**
                                      * AppServiceAccountList items.
-                                     * @member {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccount>} items
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @member {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccount>} items
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @instance
                                      */
                                     AppServiceAccountList.prototype.items = $util.emptyArray;
@@ -1124,21 +1124,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new AppServiceAccountList instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountList=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountList=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList instance
                                      */
                                     AppServiceAccountList.create = function create(properties) {
                                         return new AppServiceAccountList(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified AppServiceAccountList message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList.verify|verify} messages.
+                                     * Encodes the specified AppServiceAccountList message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountList} message AppServiceAccountList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountList} message AppServiceAccountList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1149,16 +1149,16 @@ export const github = $root.github = (() => {
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.items != null && message.items.length)
                                             for (let i = 0; i < message.items.length; ++i)
-                                                $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                                $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified AppServiceAccountList message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList.verify|verify} messages.
+                                     * Encodes the specified AppServiceAccountList message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountList} message AppServiceAccountList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountList} message AppServiceAccountList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1169,18 +1169,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppServiceAccountList message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     AppServiceAccountList.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -1191,7 +1191,7 @@ export const github = $root.github = (() => {
                                             case 2: {
                                                     if (!(message.items && message.items.length))
                                                         message.items = [];
-                                                    message.items.push($root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.decode(reader, reader.uint32()));
+                                                    message.items.push($root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.decode(reader, reader.uint32()));
                                                     break;
                                                 }
                                             default:
@@ -1205,10 +1205,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppServiceAccountList message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -1221,7 +1221,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an AppServiceAccountList message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1238,7 +1238,7 @@ export const github = $root.github = (() => {
                                             if (!Array.isArray(message.items))
                                                 return "items: array expected";
                                             for (let i = 0; i < message.items.length; ++i) {
-                                                let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.verify(message.items[i]);
+                                                let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.verify(message.items[i]);
                                                 if (error)
                                                     return "items." + error;
                                             }
@@ -1249,28 +1249,28 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an AppServiceAccountList message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList} AppServiceAccountList
                                      */
                                     AppServiceAccountList.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.fromObject(object.metadata);
                                         }
                                         if (object.items) {
                                             if (!Array.isArray(object.items))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList.items: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList.items: array expected");
                                             message.items = [];
                                             for (let i = 0; i < object.items.length; ++i) {
                                                 if (typeof object.items[i] !== "object")
-                                                    throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList.items: object expected");
-                                                message.items[i] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.fromObject(object.items[i]);
+                                                    throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList.items: object expected");
+                                                message.items[i] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.fromObject(object.items[i]);
                                             }
                                         }
                                         return message;
@@ -1279,9 +1279,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an AppServiceAccountList message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList} message AppServiceAccountList
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList} message AppServiceAccountList
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -1298,7 +1298,7 @@ export const github = $root.github = (() => {
                                         if (message.items && message.items.length) {
                                             object.items = [];
                                             for (let j = 0; j < message.items.length; ++j)
-                                                object.items[j] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccount.toObject(message.items[j], options);
+                                                object.items[j] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccount.toObject(message.items[j], options);
                                         }
                                         return object;
                                     };
@@ -1306,7 +1306,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this AppServiceAccountList to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -1317,7 +1317,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for AppServiceAccountList
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -1326,7 +1326,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountList";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountList";
                                     };
 
                                     return AppServiceAccountList;
@@ -1336,20 +1336,20 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an AppServiceAccountSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IAppServiceAccountSpec
                                      * @property {string|null} [desc] AppServiceAccountSpec desc
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRoleRef|null} [roleRef] AppServiceAccountSpec roleRef
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta|null} [accountMeta] AppServiceAccountSpec accountMeta
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRoleRef|null} [roleRef] AppServiceAccountSpec roleRef
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta|null} [accountMeta] AppServiceAccountSpec accountMeta
                                      */
 
                                     /**
                                      * Constructs a new AppServiceAccountSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an AppServiceAccountSpec.
                                      * @implements IAppServiceAccountSpec
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountSpec=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountSpec=} [properties] Properties to set
                                      */
                                     function AppServiceAccountSpec(properties) {
                                         if (properties)
@@ -1361,23 +1361,23 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppServiceAccountSpec desc.
                                      * @member {string} desc
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @instance
                                      */
                                     AppServiceAccountSpec.prototype.desc = "";
 
                                     /**
                                      * AppServiceAccountSpec roleRef.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRoleRef|null|undefined} roleRef
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRoleRef|null|undefined} roleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @instance
                                      */
                                     AppServiceAccountSpec.prototype.roleRef = null;
 
                                     /**
                                      * AppServiceAccountSpec accountMeta.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta|null|undefined} accountMeta
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta|null|undefined} accountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @instance
                                      */
                                     AppServiceAccountSpec.prototype.accountMeta = null;
@@ -1385,21 +1385,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new AppServiceAccountSpec instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountSpec=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountSpec=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec instance
                                      */
                                     AppServiceAccountSpec.create = function create(properties) {
                                         return new AppServiceAccountSpec(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified AppServiceAccountSpec message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.verify|verify} messages.
+                                     * Encodes the specified AppServiceAccountSpec message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountSpec} message AppServiceAccountSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountSpec} message AppServiceAccountSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1409,18 +1409,18 @@ export const github = $root.github = (() => {
                                         if (message.desc != null && Object.hasOwnProperty.call(message, "desc"))
                                             writer.uint32(/* id 1, wireType 2 =*/10).string(message.desc);
                                         if (message.roleRef != null && Object.hasOwnProperty.call(message, "roleRef"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.encode(message.roleRef, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.encode(message.roleRef, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         if (message.accountMeta != null && Object.hasOwnProperty.call(message, "accountMeta"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.encode(message.accountMeta, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.encode(message.accountMeta, writer.uint32(/* id 3, wireType 2 =*/26).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified AppServiceAccountSpec message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.verify|verify} messages.
+                                     * Encodes the specified AppServiceAccountSpec message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppServiceAccountSpec} message AppServiceAccountSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppServiceAccountSpec} message AppServiceAccountSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1431,18 +1431,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppServiceAccountSpec message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     AppServiceAccountSpec.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -1451,11 +1451,11 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.roleRef = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.decode(reader, reader.uint32());
+                                                    message.roleRef = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             case 3: {
-                                                    message.accountMeta = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.decode(reader, reader.uint32());
+                                                    message.accountMeta = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             default:
@@ -1469,10 +1469,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppServiceAccountSpec message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -1485,7 +1485,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an AppServiceAccountSpec message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1497,12 +1497,12 @@ export const github = $root.github = (() => {
                                             if (!$util.isString(message.desc))
                                                 return "desc: string expected";
                                         if (message.roleRef != null && message.hasOwnProperty("roleRef")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.verify(message.roleRef);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.verify(message.roleRef);
                                             if (error)
                                                 return "roleRef." + error;
                                         }
                                         if (message.accountMeta != null && message.hasOwnProperty("accountMeta")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.verify(message.accountMeta);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.verify(message.accountMeta);
                                             if (error)
                                                 return "accountMeta." + error;
                                         }
@@ -1512,26 +1512,26 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an AppServiceAccountSpec message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec} AppServiceAccountSpec
                                      */
                                     AppServiceAccountSpec.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec();
                                         if (object.desc != null)
                                             message.desc = String(object.desc);
                                         if (object.roleRef != null) {
                                             if (typeof object.roleRef !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.roleRef: object expected");
-                                            message.roleRef = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.fromObject(object.roleRef);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.roleRef: object expected");
+                                            message.roleRef = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.fromObject(object.roleRef);
                                         }
                                         if (object.accountMeta != null) {
                                             if (typeof object.accountMeta !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec.accountMeta: object expected");
-                                            message.accountMeta = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.fromObject(object.accountMeta);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec.accountMeta: object expected");
+                                            message.accountMeta = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.fromObject(object.accountMeta);
                                         }
                                         return message;
                                     };
@@ -1539,9 +1539,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an AppServiceAccountSpec message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec} message AppServiceAccountSpec
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec} message AppServiceAccountSpec
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -1557,16 +1557,16 @@ export const github = $root.github = (() => {
                                         if (message.desc != null && message.hasOwnProperty("desc"))
                                             object.desc = message.desc;
                                         if (message.roleRef != null && message.hasOwnProperty("roleRef"))
-                                            object.roleRef = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.toObject(message.roleRef, options);
+                                            object.roleRef = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.toObject(message.roleRef, options);
                                         if (message.accountMeta != null && message.hasOwnProperty("accountMeta"))
-                                            object.accountMeta = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.toObject(message.accountMeta, options);
+                                            object.accountMeta = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.toObject(message.accountMeta, options);
                                         return object;
                                     };
 
                                     /**
                                      * Converts this AppServiceAccountSpec to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -1577,7 +1577,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for AppServiceAccountSpec
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -1586,7 +1586,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.AppServiceAccountSpec";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppServiceAccountSpec";
                                     };
 
                                     return AppServiceAccountSpec;
@@ -1596,7 +1596,7 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of an AppSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IAppSpec
                                      * @property {string|null} [id] AppSpec id
                                      * @property {string|null} [secret] AppSpec secret
@@ -1605,11 +1605,11 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Constructs a new AppSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents an AppSpec.
                                      * @implements IAppSpec
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppSpec=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppSpec=} [properties] Properties to set
                                      */
                                     function AppSpec(properties) {
                                         if (properties)
@@ -1621,7 +1621,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppSpec id.
                                      * @member {string} id
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @instance
                                      */
                                     AppSpec.prototype.id = "";
@@ -1629,7 +1629,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppSpec secret.
                                      * @member {string} secret
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @instance
                                      */
                                     AppSpec.prototype.secret = "";
@@ -1637,7 +1637,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * AppSpec desc.
                                      * @member {string} desc
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @instance
                                      */
                                     AppSpec.prototype.desc = "";
@@ -1645,21 +1645,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new AppSpec instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppSpec=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec} AppSpec instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppSpec=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec} AppSpec instance
                                      */
                                     AppSpec.create = function create(properties) {
                                         return new AppSpec(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified AppSpec message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.verify|verify} messages.
+                                     * Encodes the specified AppSpec message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppSpec} message AppSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppSpec} message AppSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1676,11 +1676,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified AppSpec message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec.verify|verify} messages.
+                                     * Encodes the specified AppSpec message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAppSpec} message AppSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAppSpec} message AppSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1691,18 +1691,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppSpec message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec} AppSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec} AppSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     AppSpec.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -1729,10 +1729,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes an AppSpec message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec} AppSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec} AppSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -1745,7 +1745,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies an AppSpec message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1768,15 +1768,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates an AppSpec message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec} AppSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec} AppSpec
                                      */
                                     AppSpec.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec();
                                         if (object.id != null)
                                             message.id = String(object.id);
                                         if (object.secret != null)
@@ -1789,9 +1789,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from an AppSpec message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec} message AppSpec
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec} message AppSpec
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -1816,7 +1816,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this AppSpec to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -1827,7 +1827,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for AppSpec
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -1836,7 +1836,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.AppSpec";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.AppSpec";
                                     };
 
                                     return AppSpec;
@@ -1846,19 +1846,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a ClusterRole.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IClusterRole
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null} [metadata] ClusterRole metadata
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleSpec|null} [spec] ClusterRole spec
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleSpec|null} [spec] ClusterRole spec
                                      */
 
                                     /**
                                      * Constructs a new ClusterRole.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a ClusterRole.
                                      * @implements IClusterRole
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRole=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRole=} [properties] Properties to set
                                      */
                                     function ClusterRole(properties) {
                                         if (properties)
@@ -1870,15 +1870,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * ClusterRole metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @instance
                                      */
                                     ClusterRole.prototype.metadata = null;
 
                                     /**
                                      * ClusterRole spec.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleSpec|null|undefined} spec
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleSpec|null|undefined} spec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @instance
                                      */
                                     ClusterRole.prototype.spec = null;
@@ -1886,21 +1886,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new ClusterRole instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRole=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole} ClusterRole instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRole=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole} ClusterRole instance
                                      */
                                     ClusterRole.create = function create(properties) {
                                         return new ClusterRole(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified ClusterRole message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.verify|verify} messages.
+                                     * Encodes the specified ClusterRole message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRole} message ClusterRole message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRole} message ClusterRole message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1910,16 +1910,16 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && Object.hasOwnProperty.call(message, "metadata"))
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.spec != null && Object.hasOwnProperty.call(message, "spec"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified ClusterRole message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.verify|verify} messages.
+                                     * Encodes the specified ClusterRole message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRole} message ClusterRole message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRole} message ClusterRole message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -1930,18 +1930,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a ClusterRole message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole} ClusterRole
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole} ClusterRole
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     ClusterRole.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -1950,7 +1950,7 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.decode(reader, reader.uint32());
+                                                    message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             default:
@@ -1964,10 +1964,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a ClusterRole message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole} ClusterRole
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole} ClusterRole
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -1980,7 +1980,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a ClusterRole message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1994,7 +1994,7 @@ export const github = $root.github = (() => {
                                                 return "metadata." + error;
                                         }
                                         if (message.spec != null && message.hasOwnProperty("spec")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.verify(message.spec);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.verify(message.spec);
                                             if (error)
                                                 return "spec." + error;
                                         }
@@ -2004,24 +2004,24 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a ClusterRole message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole} ClusterRole
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole} ClusterRole
                                      */
                                     ClusterRole.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.fromObject(object.metadata);
                                         }
                                         if (object.spec != null) {
                                             if (typeof object.spec !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.spec: object expected");
-                                            message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.fromObject(object.spec);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.spec: object expected");
+                                            message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.fromObject(object.spec);
                                         }
                                         return message;
                                     };
@@ -2029,9 +2029,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a ClusterRole message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole} message ClusterRole
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole} message ClusterRole
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -2046,14 +2046,14 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && message.hasOwnProperty("metadata"))
                                             object.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.toObject(message.metadata, options);
                                         if (message.spec != null && message.hasOwnProperty("spec"))
-                                            object.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.toObject(message.spec, options);
+                                            object.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.toObject(message.spec, options);
                                         return object;
                                     };
 
                                     /**
                                      * Converts this ClusterRole to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -2064,7 +2064,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for ClusterRole
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -2073,7 +2073,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole";
                                     };
 
                                     return ClusterRole;
@@ -2083,19 +2083,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a ClusterRoleList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IClusterRoleList
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null} [metadata] ClusterRoleList metadata
-                                     * @property {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRole>|null} [items] ClusterRoleList items
+                                     * @property {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRole>|null} [items] ClusterRoleList items
                                      */
 
                                     /**
                                      * Constructs a new ClusterRoleList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a ClusterRoleList.
                                      * @implements IClusterRoleList
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleList=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleList=} [properties] Properties to set
                                      */
                                     function ClusterRoleList(properties) {
                                         this.items = [];
@@ -2108,15 +2108,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * ClusterRoleList metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @instance
                                      */
                                     ClusterRoleList.prototype.metadata = null;
 
                                     /**
                                      * ClusterRoleList items.
-                                     * @member {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRole>} items
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @member {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRole>} items
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @instance
                                      */
                                     ClusterRoleList.prototype.items = $util.emptyArray;
@@ -2124,21 +2124,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new ClusterRoleList instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleList=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleList=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList instance
                                      */
                                     ClusterRoleList.create = function create(properties) {
                                         return new ClusterRoleList(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified ClusterRoleList message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList.verify|verify} messages.
+                                     * Encodes the specified ClusterRoleList message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleList} message ClusterRoleList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleList} message ClusterRoleList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2149,16 +2149,16 @@ export const github = $root.github = (() => {
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.items != null && message.items.length)
                                             for (let i = 0; i < message.items.length; ++i)
-                                                $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                                $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified ClusterRoleList message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList.verify|verify} messages.
+                                     * Encodes the specified ClusterRoleList message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleList} message ClusterRoleList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleList} message ClusterRoleList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2169,18 +2169,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a ClusterRoleList message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     ClusterRoleList.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -2191,7 +2191,7 @@ export const github = $root.github = (() => {
                                             case 2: {
                                                     if (!(message.items && message.items.length))
                                                         message.items = [];
-                                                    message.items.push($root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.decode(reader, reader.uint32()));
+                                                    message.items.push($root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.decode(reader, reader.uint32()));
                                                     break;
                                                 }
                                             default:
@@ -2205,10 +2205,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a ClusterRoleList message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -2221,7 +2221,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a ClusterRoleList message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2238,7 +2238,7 @@ export const github = $root.github = (() => {
                                             if (!Array.isArray(message.items))
                                                 return "items: array expected";
                                             for (let i = 0; i < message.items.length; ++i) {
-                                                let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.verify(message.items[i]);
+                                                let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.verify(message.items[i]);
                                                 if (error)
                                                     return "items." + error;
                                             }
@@ -2249,28 +2249,28 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a ClusterRoleList message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList} ClusterRoleList
                                      */
                                     ClusterRoleList.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.fromObject(object.metadata);
                                         }
                                         if (object.items) {
                                             if (!Array.isArray(object.items))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList.items: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList.items: array expected");
                                             message.items = [];
                                             for (let i = 0; i < object.items.length; ++i) {
                                                 if (typeof object.items[i] !== "object")
-                                                    throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList.items: object expected");
-                                                message.items[i] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.fromObject(object.items[i]);
+                                                    throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList.items: object expected");
+                                                message.items[i] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.fromObject(object.items[i]);
                                             }
                                         }
                                         return message;
@@ -2279,9 +2279,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a ClusterRoleList message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList} message ClusterRoleList
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList} message ClusterRoleList
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -2298,7 +2298,7 @@ export const github = $root.github = (() => {
                                         if (message.items && message.items.length) {
                                             object.items = [];
                                             for (let j = 0; j < message.items.length; ++j)
-                                                object.items[j] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRole.toObject(message.items[j], options);
+                                                object.items[j] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRole.toObject(message.items[j], options);
                                         }
                                         return object;
                                     };
@@ -2306,7 +2306,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this ClusterRoleList to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -2317,7 +2317,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for ClusterRoleList
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -2326,7 +2326,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleList";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleList";
                                     };
 
                                     return ClusterRoleList;
@@ -2336,19 +2336,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a ClusterRoleSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IClusterRoleSpec
                                      * @property {string|null} [desc] ClusterRoleSpec desc
-                                     * @property {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IPolicyRule>|null} [rules] ClusterRoleSpec rules
+                                     * @property {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IPolicyRule>|null} [rules] ClusterRoleSpec rules
                                      */
 
                                     /**
                                      * Constructs a new ClusterRoleSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a ClusterRoleSpec.
                                      * @implements IClusterRoleSpec
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleSpec=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleSpec=} [properties] Properties to set
                                      */
                                     function ClusterRoleSpec(properties) {
                                         this.rules = [];
@@ -2361,15 +2361,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * ClusterRoleSpec desc.
                                      * @member {string} desc
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @instance
                                      */
                                     ClusterRoleSpec.prototype.desc = "";
 
                                     /**
                                      * ClusterRoleSpec rules.
-                                     * @member {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IPolicyRule>} rules
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @member {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IPolicyRule>} rules
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @instance
                                      */
                                     ClusterRoleSpec.prototype.rules = $util.emptyArray;
@@ -2377,21 +2377,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new ClusterRoleSpec instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleSpec=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleSpec=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec instance
                                      */
                                     ClusterRoleSpec.create = function create(properties) {
                                         return new ClusterRoleSpec(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified ClusterRoleSpec message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.verify|verify} messages.
+                                     * Encodes the specified ClusterRoleSpec message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleSpec} message ClusterRoleSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleSpec} message ClusterRoleSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2402,16 +2402,16 @@ export const github = $root.github = (() => {
                                             writer.uint32(/* id 1, wireType 2 =*/10).string(message.desc);
                                         if (message.rules != null && message.rules.length)
                                             for (let i = 0; i < message.rules.length; ++i)
-                                                $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.encode(message.rules[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                                $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.encode(message.rules[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified ClusterRoleSpec message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.verify|verify} messages.
+                                     * Encodes the specified ClusterRoleSpec message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IClusterRoleSpec} message ClusterRoleSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IClusterRoleSpec} message ClusterRoleSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2422,18 +2422,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a ClusterRoleSpec message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     ClusterRoleSpec.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -2444,7 +2444,7 @@ export const github = $root.github = (() => {
                                             case 2: {
                                                     if (!(message.rules && message.rules.length))
                                                         message.rules = [];
-                                                    message.rules.push($root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.decode(reader, reader.uint32()));
+                                                    message.rules.push($root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.decode(reader, reader.uint32()));
                                                     break;
                                                 }
                                             default:
@@ -2458,10 +2458,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a ClusterRoleSpec message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -2474,7 +2474,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a ClusterRoleSpec message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2489,7 +2489,7 @@ export const github = $root.github = (() => {
                                             if (!Array.isArray(message.rules))
                                                 return "rules: array expected";
                                             for (let i = 0; i < message.rules.length; ++i) {
-                                                let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.verify(message.rules[i]);
+                                                let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.verify(message.rules[i]);
                                                 if (error)
                                                     return "rules." + error;
                                             }
@@ -2500,25 +2500,25 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a ClusterRoleSpec message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec} ClusterRoleSpec
                                      */
                                     ClusterRoleSpec.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec();
                                         if (object.desc != null)
                                             message.desc = String(object.desc);
                                         if (object.rules) {
                                             if (!Array.isArray(object.rules))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.rules: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.rules: array expected");
                                             message.rules = [];
                                             for (let i = 0; i < object.rules.length; ++i) {
                                                 if (typeof object.rules[i] !== "object")
-                                                    throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec.rules: object expected");
-                                                message.rules[i] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.fromObject(object.rules[i]);
+                                                    throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec.rules: object expected");
+                                                message.rules[i] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.fromObject(object.rules[i]);
                                             }
                                         }
                                         return message;
@@ -2527,9 +2527,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a ClusterRoleSpec message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec} message ClusterRoleSpec
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec} message ClusterRoleSpec
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -2546,7 +2546,7 @@ export const github = $root.github = (() => {
                                         if (message.rules && message.rules.length) {
                                             object.rules = [];
                                             for (let j = 0; j < message.rules.length; ++j)
-                                                object.rules[j] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.toObject(message.rules[j], options);
+                                                object.rules[j] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.toObject(message.rules[j], options);
                                         }
                                         return object;
                                     };
@@ -2554,7 +2554,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this ClusterRoleSpec to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -2565,7 +2565,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for ClusterRoleSpec
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -2574,7 +2574,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.ClusterRoleSpec";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.ClusterRoleSpec";
                                     };
 
                                     return ClusterRoleSpec;
@@ -2584,7 +2584,7 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a GroupVersionKind.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IGroupVersionKind
                                      * @property {string|null} [group] GroupVersionKind group
                                      * @property {string|null} [version] GroupVersionKind version
@@ -2593,11 +2593,11 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Constructs a new GroupVersionKind.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a GroupVersionKind.
                                      * @implements IGroupVersionKind
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind=} [properties] Properties to set
                                      */
                                     function GroupVersionKind(properties) {
                                         if (properties)
@@ -2609,7 +2609,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * GroupVersionKind group.
                                      * @member {string} group
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @instance
                                      */
                                     GroupVersionKind.prototype.group = "";
@@ -2617,7 +2617,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * GroupVersionKind version.
                                      * @member {string} version
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @instance
                                      */
                                     GroupVersionKind.prototype.version = "";
@@ -2625,7 +2625,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * GroupVersionKind kind.
                                      * @member {string} kind
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @instance
                                      */
                                     GroupVersionKind.prototype.kind = "";
@@ -2633,21 +2633,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new GroupVersionKind instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind instance
                                      */
                                     GroupVersionKind.create = function create(properties) {
                                         return new GroupVersionKind(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified GroupVersionKind message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.verify|verify} messages.
+                                     * Encodes the specified GroupVersionKind message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind} message GroupVersionKind message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind} message GroupVersionKind message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2664,11 +2664,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified GroupVersionKind message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.verify|verify} messages.
+                                     * Encodes the specified GroupVersionKind message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind} message GroupVersionKind message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind} message GroupVersionKind message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2679,18 +2679,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a GroupVersionKind message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     GroupVersionKind.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -2717,10 +2717,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a GroupVersionKind message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -2733,7 +2733,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a GroupVersionKind message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2756,15 +2756,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a GroupVersionKind message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind} GroupVersionKind
                                      */
                                     GroupVersionKind.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind();
                                         if (object.group != null)
                                             message.group = String(object.group);
                                         if (object.version != null)
@@ -2777,9 +2777,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a GroupVersionKind message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind} message GroupVersionKind
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind} message GroupVersionKind
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -2804,7 +2804,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this GroupVersionKind to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -2815,7 +2815,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for GroupVersionKind
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -2824,7 +2824,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind";
                                     };
 
                                     return GroupVersionKind;
@@ -2834,19 +2834,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a GroupVersionKindRule.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IGroupVersionKindRule
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null} [metadata] GroupVersionKindRule metadata
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRuleSpec|null} [spec] GroupVersionKindRule spec
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRuleSpec|null} [spec] GroupVersionKindRule spec
                                      */
 
                                     /**
                                      * Constructs a new GroupVersionKindRule.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a GroupVersionKindRule.
                                      * @implements IGroupVersionKindRule
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRule=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRule=} [properties] Properties to set
                                      */
                                     function GroupVersionKindRule(properties) {
                                         if (properties)
@@ -2858,15 +2858,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * GroupVersionKindRule metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @instance
                                      */
                                     GroupVersionKindRule.prototype.metadata = null;
 
                                     /**
                                      * GroupVersionKindRule spec.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRuleSpec|null|undefined} spec
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRuleSpec|null|undefined} spec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @instance
                                      */
                                     GroupVersionKindRule.prototype.spec = null;
@@ -2874,21 +2874,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new GroupVersionKindRule instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRule=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRule=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule instance
                                      */
                                     GroupVersionKindRule.create = function create(properties) {
                                         return new GroupVersionKindRule(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified GroupVersionKindRule message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.verify|verify} messages.
+                                     * Encodes the specified GroupVersionKindRule message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRule} message GroupVersionKindRule message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRule} message GroupVersionKindRule message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2898,16 +2898,16 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && Object.hasOwnProperty.call(message, "metadata"))
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.spec != null && Object.hasOwnProperty.call(message, "spec"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified GroupVersionKindRule message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.verify|verify} messages.
+                                     * Encodes the specified GroupVersionKindRule message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRule} message GroupVersionKindRule message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRule} message GroupVersionKindRule message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -2918,18 +2918,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a GroupVersionKindRule message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     GroupVersionKindRule.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -2938,7 +2938,7 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.decode(reader, reader.uint32());
+                                                    message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             default:
@@ -2952,10 +2952,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a GroupVersionKindRule message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -2968,7 +2968,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a GroupVersionKindRule message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2982,7 +2982,7 @@ export const github = $root.github = (() => {
                                                 return "metadata." + error;
                                         }
                                         if (message.spec != null && message.hasOwnProperty("spec")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.verify(message.spec);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.verify(message.spec);
                                             if (error)
                                                 return "spec." + error;
                                         }
@@ -2992,24 +2992,24 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a GroupVersionKindRule message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule} GroupVersionKindRule
                                      */
                                     GroupVersionKindRule.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.fromObject(object.metadata);
                                         }
                                         if (object.spec != null) {
                                             if (typeof object.spec !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.spec: object expected");
-                                            message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.fromObject(object.spec);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.spec: object expected");
+                                            message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.fromObject(object.spec);
                                         }
                                         return message;
                                     };
@@ -3017,9 +3017,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a GroupVersionKindRule message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule} message GroupVersionKindRule
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule} message GroupVersionKindRule
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -3034,14 +3034,14 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && message.hasOwnProperty("metadata"))
                                             object.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.toObject(message.metadata, options);
                                         if (message.spec != null && message.hasOwnProperty("spec"))
-                                            object.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.toObject(message.spec, options);
+                                            object.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.toObject(message.spec, options);
                                         return object;
                                     };
 
                                     /**
                                      * Converts this GroupVersionKindRule to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -3052,7 +3052,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for GroupVersionKindRule
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -3061,7 +3061,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule";
                                     };
 
                                     return GroupVersionKindRule;
@@ -3071,19 +3071,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a GroupVersionKindRuleList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IGroupVersionKindRuleList
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null} [metadata] GroupVersionKindRuleList metadata
-                                     * @property {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRule>|null} [items] GroupVersionKindRuleList items
+                                     * @property {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRule>|null} [items] GroupVersionKindRuleList items
                                      */
 
                                     /**
                                      * Constructs a new GroupVersionKindRuleList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a GroupVersionKindRuleList.
                                      * @implements IGroupVersionKindRuleList
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRuleList=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRuleList=} [properties] Properties to set
                                      */
                                     function GroupVersionKindRuleList(properties) {
                                         this.items = [];
@@ -3096,15 +3096,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * GroupVersionKindRuleList metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @instance
                                      */
                                     GroupVersionKindRuleList.prototype.metadata = null;
 
                                     /**
                                      * GroupVersionKindRuleList items.
-                                     * @member {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRule>} items
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @member {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRule>} items
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @instance
                                      */
                                     GroupVersionKindRuleList.prototype.items = $util.emptyArray;
@@ -3112,21 +3112,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new GroupVersionKindRuleList instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRuleList=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRuleList=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList instance
                                      */
                                     GroupVersionKindRuleList.create = function create(properties) {
                                         return new GroupVersionKindRuleList(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified GroupVersionKindRuleList message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList.verify|verify} messages.
+                                     * Encodes the specified GroupVersionKindRuleList message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRuleList} message GroupVersionKindRuleList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRuleList} message GroupVersionKindRuleList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3137,16 +3137,16 @@ export const github = $root.github = (() => {
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.items != null && message.items.length)
                                             for (let i = 0; i < message.items.length; ++i)
-                                                $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                                $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified GroupVersionKindRuleList message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList.verify|verify} messages.
+                                     * Encodes the specified GroupVersionKindRuleList message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKindRuleList} message GroupVersionKindRuleList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKindRuleList} message GroupVersionKindRuleList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3157,18 +3157,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a GroupVersionKindRuleList message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     GroupVersionKindRuleList.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -3179,7 +3179,7 @@ export const github = $root.github = (() => {
                                             case 2: {
                                                     if (!(message.items && message.items.length))
                                                         message.items = [];
-                                                    message.items.push($root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.decode(reader, reader.uint32()));
+                                                    message.items.push($root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.decode(reader, reader.uint32()));
                                                     break;
                                                 }
                                             default:
@@ -3193,10 +3193,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a GroupVersionKindRuleList message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -3209,7 +3209,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a GroupVersionKindRuleList message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3226,7 +3226,7 @@ export const github = $root.github = (() => {
                                             if (!Array.isArray(message.items))
                                                 return "items: array expected";
                                             for (let i = 0; i < message.items.length; ++i) {
-                                                let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.verify(message.items[i]);
+                                                let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.verify(message.items[i]);
                                                 if (error)
                                                     return "items." + error;
                                             }
@@ -3237,28 +3237,28 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a GroupVersionKindRuleList message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList} GroupVersionKindRuleList
                                      */
                                     GroupVersionKindRuleList.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.fromObject(object.metadata);
                                         }
                                         if (object.items) {
                                             if (!Array.isArray(object.items))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList.items: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList.items: array expected");
                                             message.items = [];
                                             for (let i = 0; i < object.items.length; ++i) {
                                                 if (typeof object.items[i] !== "object")
-                                                    throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList.items: object expected");
-                                                message.items[i] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.fromObject(object.items[i]);
+                                                    throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList.items: object expected");
+                                                message.items[i] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.fromObject(object.items[i]);
                                             }
                                         }
                                         return message;
@@ -3267,9 +3267,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a GroupVersionKindRuleList message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList} message GroupVersionKindRuleList
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList} message GroupVersionKindRuleList
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -3286,7 +3286,7 @@ export const github = $root.github = (() => {
                                         if (message.items && message.items.length) {
                                             object.items = [];
                                             for (let j = 0; j < message.items.length; ++j)
-                                                object.items[j] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRule.toObject(message.items[j], options);
+                                                object.items[j] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRule.toObject(message.items[j], options);
                                         }
                                         return object;
                                     };
@@ -3294,7 +3294,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this GroupVersionKindRuleList to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -3305,7 +3305,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for GroupVersionKindRuleList
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -3314,7 +3314,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKindRuleList";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKindRuleList";
                                     };
 
                                     return GroupVersionKindRuleList;
@@ -3324,20 +3324,20 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a PolicyRule.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IPolicyRule
                                      * @property {string|null} [namespace] PolicyRule namespace
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind|null} [groupVersionKind] PolicyRule groupVersionKind
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind|null} [groupVersionKind] PolicyRule groupVersionKind
                                      * @property {Array.<string>|null} [verbs] PolicyRule verbs
                                      */
 
                                     /**
                                      * Constructs a new PolicyRule.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a PolicyRule.
                                      * @implements IPolicyRule
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IPolicyRule=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IPolicyRule=} [properties] Properties to set
                                      */
                                     function PolicyRule(properties) {
                                         this.verbs = [];
@@ -3350,15 +3350,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * PolicyRule namespace.
                                      * @member {string} namespace
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @instance
                                      */
                                     PolicyRule.prototype.namespace = "";
 
                                     /**
                                      * PolicyRule groupVersionKind.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind|null|undefined} groupVersionKind
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind|null|undefined} groupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @instance
                                      */
                                     PolicyRule.prototype.groupVersionKind = null;
@@ -3366,7 +3366,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * PolicyRule verbs.
                                      * @member {Array.<string>} verbs
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @instance
                                      */
                                     PolicyRule.prototype.verbs = $util.emptyArray;
@@ -3374,21 +3374,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new PolicyRule instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IPolicyRule=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule} PolicyRule instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IPolicyRule=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule} PolicyRule instance
                                      */
                                     PolicyRule.create = function create(properties) {
                                         return new PolicyRule(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified PolicyRule message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.verify|verify} messages.
+                                     * Encodes the specified PolicyRule message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IPolicyRule} message PolicyRule message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IPolicyRule} message PolicyRule message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3398,7 +3398,7 @@ export const github = $root.github = (() => {
                                         if (message.namespace != null && Object.hasOwnProperty.call(message, "namespace"))
                                             writer.uint32(/* id 1, wireType 2 =*/10).string(message.namespace);
                                         if (message.groupVersionKind != null && Object.hasOwnProperty.call(message, "groupVersionKind"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.encode(message.groupVersionKind, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.encode(message.groupVersionKind, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         if (message.verbs != null && message.verbs.length)
                                             for (let i = 0; i < message.verbs.length; ++i)
                                                 writer.uint32(/* id 3, wireType 2 =*/26).string(message.verbs[i]);
@@ -3406,11 +3406,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified PolicyRule message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.verify|verify} messages.
+                                     * Encodes the specified PolicyRule message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IPolicyRule} message PolicyRule message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IPolicyRule} message PolicyRule message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3421,18 +3421,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a PolicyRule message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule} PolicyRule
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule} PolicyRule
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     PolicyRule.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -3441,7 +3441,7 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.groupVersionKind = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.decode(reader, reader.uint32());
+                                                    message.groupVersionKind = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             case 3: {
@@ -3461,10 +3461,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a PolicyRule message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule} PolicyRule
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule} PolicyRule
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -3477,7 +3477,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a PolicyRule message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3489,7 +3489,7 @@ export const github = $root.github = (() => {
                                             if (!$util.isString(message.namespace))
                                                 return "namespace: string expected";
                                         if (message.groupVersionKind != null && message.hasOwnProperty("groupVersionKind")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.verify(message.groupVersionKind);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.verify(message.groupVersionKind);
                                             if (error)
                                                 return "groupVersionKind." + error;
                                         }
@@ -3506,25 +3506,25 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a PolicyRule message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule} PolicyRule
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule} PolicyRule
                                      */
                                     PolicyRule.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule();
                                         if (object.namespace != null)
                                             message.namespace = String(object.namespace);
                                         if (object.groupVersionKind != null) {
                                             if (typeof object.groupVersionKind !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.groupVersionKind: object expected");
-                                            message.groupVersionKind = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.fromObject(object.groupVersionKind);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.groupVersionKind: object expected");
+                                            message.groupVersionKind = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.fromObject(object.groupVersionKind);
                                         }
                                         if (object.verbs) {
                                             if (!Array.isArray(object.verbs))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule.verbs: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule.verbs: array expected");
                                             message.verbs = [];
                                             for (let i = 0; i < object.verbs.length; ++i)
                                                 message.verbs[i] = String(object.verbs[i]);
@@ -3535,9 +3535,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a PolicyRule message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule} message PolicyRule
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule} message PolicyRule
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -3554,7 +3554,7 @@ export const github = $root.github = (() => {
                                         if (message.namespace != null && message.hasOwnProperty("namespace"))
                                             object.namespace = message.namespace;
                                         if (message.groupVersionKind != null && message.hasOwnProperty("groupVersionKind"))
-                                            object.groupVersionKind = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.toObject(message.groupVersionKind, options);
+                                            object.groupVersionKind = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.toObject(message.groupVersionKind, options);
                                         if (message.verbs && message.verbs.length) {
                                             object.verbs = [];
                                             for (let j = 0; j < message.verbs.length; ++j)
@@ -3566,7 +3566,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this PolicyRule to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -3577,7 +3577,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for PolicyRule
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -3586,7 +3586,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.PolicyRule";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.PolicyRule";
                                     };
 
                                     return PolicyRule;
@@ -3596,19 +3596,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a RbacServiceAccount.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IRbacServiceAccount
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null} [metadata] RbacServiceAccount metadata
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountSpec|null} [spec] RbacServiceAccount spec
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountSpec|null} [spec] RbacServiceAccount spec
                                      */
 
                                     /**
                                      * Constructs a new RbacServiceAccount.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a RbacServiceAccount.
                                      * @implements IRbacServiceAccount
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccount=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccount=} [properties] Properties to set
                                      */
                                     function RbacServiceAccount(properties) {
                                         if (properties)
@@ -3620,15 +3620,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * RbacServiceAccount metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IObjectMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @instance
                                      */
                                     RbacServiceAccount.prototype.metadata = null;
 
                                     /**
                                      * RbacServiceAccount spec.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountSpec|null|undefined} spec
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountSpec|null|undefined} spec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @instance
                                      */
                                     RbacServiceAccount.prototype.spec = null;
@@ -3636,21 +3636,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new RbacServiceAccount instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccount=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccount=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount instance
                                      */
                                     RbacServiceAccount.create = function create(properties) {
                                         return new RbacServiceAccount(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified RbacServiceAccount message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.verify|verify} messages.
+                                     * Encodes the specified RbacServiceAccount message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccount} message RbacServiceAccount message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccount} message RbacServiceAccount message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3660,16 +3660,16 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && Object.hasOwnProperty.call(message, "metadata"))
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.spec != null && Object.hasOwnProperty.call(message, "spec"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.encode(message.spec, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified RbacServiceAccount message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.verify|verify} messages.
+                                     * Encodes the specified RbacServiceAccount message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccount} message RbacServiceAccount message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccount} message RbacServiceAccount message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3680,18 +3680,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RbacServiceAccount message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     RbacServiceAccount.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -3700,7 +3700,7 @@ export const github = $root.github = (() => {
                                                     break;
                                                 }
                                             case 2: {
-                                                    message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.decode(reader, reader.uint32());
+                                                    message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             default:
@@ -3714,10 +3714,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RbacServiceAccount message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -3730,7 +3730,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a RbacServiceAccount message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3744,7 +3744,7 @@ export const github = $root.github = (() => {
                                                 return "metadata." + error;
                                         }
                                         if (message.spec != null && message.hasOwnProperty("spec")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.verify(message.spec);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.verify(message.spec);
                                             if (error)
                                                 return "spec." + error;
                                         }
@@ -3754,24 +3754,24 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a RbacServiceAccount message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount} RbacServiceAccount
                                      */
                                     RbacServiceAccount.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.fromObject(object.metadata);
                                         }
                                         if (object.spec != null) {
                                             if (typeof object.spec !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.spec: object expected");
-                                            message.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.fromObject(object.spec);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.spec: object expected");
+                                            message.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.fromObject(object.spec);
                                         }
                                         return message;
                                     };
@@ -3779,9 +3779,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a RbacServiceAccount message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount} message RbacServiceAccount
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount} message RbacServiceAccount
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -3796,14 +3796,14 @@ export const github = $root.github = (() => {
                                         if (message.metadata != null && message.hasOwnProperty("metadata"))
                                             object.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ObjectMeta.toObject(message.metadata, options);
                                         if (message.spec != null && message.hasOwnProperty("spec"))
-                                            object.spec = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.toObject(message.spec, options);
+                                            object.spec = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.toObject(message.spec, options);
                                         return object;
                                     };
 
                                     /**
                                      * Converts this RbacServiceAccount to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -3814,7 +3814,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for RbacServiceAccount
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -3823,7 +3823,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount";
                                     };
 
                                     return RbacServiceAccount;
@@ -3833,19 +3833,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a RbacServiceAccountList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IRbacServiceAccountList
                                      * @property {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null} [metadata] RbacServiceAccountList metadata
-                                     * @property {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccount>|null} [items] RbacServiceAccountList items
+                                     * @property {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccount>|null} [items] RbacServiceAccountList items
                                      */
 
                                     /**
                                      * Constructs a new RbacServiceAccountList.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a RbacServiceAccountList.
                                      * @implements IRbacServiceAccountList
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountList=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountList=} [properties] Properties to set
                                      */
                                     function RbacServiceAccountList(properties) {
                                         this.items = [];
@@ -3858,15 +3858,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * RbacServiceAccountList metadata.
                                      * @member {k8s.io.apimachinery.pkg.apis.meta.v1.IListMeta|null|undefined} metadata
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @instance
                                      */
                                     RbacServiceAccountList.prototype.metadata = null;
 
                                     /**
                                      * RbacServiceAccountList items.
-                                     * @member {Array.<github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccount>} items
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @member {Array.<github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccount>} items
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @instance
                                      */
                                     RbacServiceAccountList.prototype.items = $util.emptyArray;
@@ -3874,21 +3874,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new RbacServiceAccountList instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountList=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountList=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList instance
                                      */
                                     RbacServiceAccountList.create = function create(properties) {
                                         return new RbacServiceAccountList(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified RbacServiceAccountList message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList.verify|verify} messages.
+                                     * Encodes the specified RbacServiceAccountList message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountList} message RbacServiceAccountList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountList} message RbacServiceAccountList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3899,16 +3899,16 @@ export const github = $root.github = (() => {
                                             $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.encode(message.metadata, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.items != null && message.items.length)
                                             for (let i = 0; i < message.items.length; ++i)
-                                                $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                                $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.encode(message.items[i], writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                         return writer;
                                     };
 
                                     /**
-                                     * Encodes the specified RbacServiceAccountList message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList.verify|verify} messages.
+                                     * Encodes the specified RbacServiceAccountList message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountList} message RbacServiceAccountList message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountList} message RbacServiceAccountList message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -3919,18 +3919,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RbacServiceAccountList message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     RbacServiceAccountList.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -3941,7 +3941,7 @@ export const github = $root.github = (() => {
                                             case 2: {
                                                     if (!(message.items && message.items.length))
                                                         message.items = [];
-                                                    message.items.push($root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.decode(reader, reader.uint32()));
+                                                    message.items.push($root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.decode(reader, reader.uint32()));
                                                     break;
                                                 }
                                             default:
@@ -3955,10 +3955,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RbacServiceAccountList message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -3971,7 +3971,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a RbacServiceAccountList message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3988,7 +3988,7 @@ export const github = $root.github = (() => {
                                             if (!Array.isArray(message.items))
                                                 return "items: array expected";
                                             for (let i = 0; i < message.items.length; ++i) {
-                                                let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.verify(message.items[i]);
+                                                let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.verify(message.items[i]);
                                                 if (error)
                                                     return "items." + error;
                                             }
@@ -3999,28 +3999,28 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a RbacServiceAccountList message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList} RbacServiceAccountList
                                      */
                                     RbacServiceAccountList.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList();
                                         if (object.metadata != null) {
                                             if (typeof object.metadata !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList.metadata: object expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList.metadata: object expected");
                                             message.metadata = $root.k8s.io.apimachinery.pkg.apis.meta.v1.ListMeta.fromObject(object.metadata);
                                         }
                                         if (object.items) {
                                             if (!Array.isArray(object.items))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList.items: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList.items: array expected");
                                             message.items = [];
                                             for (let i = 0; i < object.items.length; ++i) {
                                                 if (typeof object.items[i] !== "object")
-                                                    throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList.items: object expected");
-                                                message.items[i] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.fromObject(object.items[i]);
+                                                    throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList.items: object expected");
+                                                message.items[i] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.fromObject(object.items[i]);
                                             }
                                         }
                                         return message;
@@ -4029,9 +4029,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a RbacServiceAccountList message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList} message RbacServiceAccountList
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList} message RbacServiceAccountList
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -4048,7 +4048,7 @@ export const github = $root.github = (() => {
                                         if (message.items && message.items.length) {
                                             object.items = [];
                                             for (let j = 0; j < message.items.length; ++j)
-                                                object.items[j] = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccount.toObject(message.items[j], options);
+                                                object.items[j] = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccount.toObject(message.items[j], options);
                                         }
                                         return object;
                                     };
@@ -4056,7 +4056,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this RbacServiceAccountList to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -4067,7 +4067,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for RbacServiceAccountList
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -4076,7 +4076,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountList";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountList";
                                     };
 
                                     return RbacServiceAccountList;
@@ -4086,19 +4086,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a RbacServiceAccountSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IRbacServiceAccountSpec
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta|null} [accountMeta] RbacServiceAccountSpec accountMeta
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta|null} [accountMeta] RbacServiceAccountSpec accountMeta
                                      * @property {Array.<string>|null} [apps] RbacServiceAccountSpec apps
                                      */
 
                                     /**
                                      * Constructs a new RbacServiceAccountSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a RbacServiceAccountSpec.
                                      * @implements IRbacServiceAccountSpec
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountSpec=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountSpec=} [properties] Properties to set
                                      */
                                     function RbacServiceAccountSpec(properties) {
                                         this.apps = [];
@@ -4110,8 +4110,8 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * RbacServiceAccountSpec accountMeta.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IAccountMeta|null|undefined} accountMeta
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IAccountMeta|null|undefined} accountMeta
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @instance
                                      */
                                     RbacServiceAccountSpec.prototype.accountMeta = null;
@@ -4119,7 +4119,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * RbacServiceAccountSpec apps.
                                      * @member {Array.<string>} apps
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @instance
                                      */
                                     RbacServiceAccountSpec.prototype.apps = $util.emptyArray;
@@ -4127,21 +4127,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new RbacServiceAccountSpec instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountSpec=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountSpec=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec instance
                                      */
                                     RbacServiceAccountSpec.create = function create(properties) {
                                         return new RbacServiceAccountSpec(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified RbacServiceAccountSpec message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.verify|verify} messages.
+                                     * Encodes the specified RbacServiceAccountSpec message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountSpec} message RbacServiceAccountSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountSpec} message RbacServiceAccountSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4149,7 +4149,7 @@ export const github = $root.github = (() => {
                                         if (!writer)
                                             writer = $Writer.create();
                                         if (message.accountMeta != null && Object.hasOwnProperty.call(message, "accountMeta"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.encode(message.accountMeta, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.encode(message.accountMeta, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.apps != null && message.apps.length)
                                             for (let i = 0; i < message.apps.length; ++i)
                                                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.apps[i]);
@@ -4157,11 +4157,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified RbacServiceAccountSpec message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.verify|verify} messages.
+                                     * Encodes the specified RbacServiceAccountSpec message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRbacServiceAccountSpec} message RbacServiceAccountSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRbacServiceAccountSpec} message RbacServiceAccountSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4172,23 +4172,23 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RbacServiceAccountSpec message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     RbacServiceAccountSpec.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
                                             case 1: {
-                                                    message.accountMeta = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.decode(reader, reader.uint32());
+                                                    message.accountMeta = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             case 2: {
@@ -4208,10 +4208,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RbacServiceAccountSpec message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -4224,7 +4224,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a RbacServiceAccountSpec message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4233,7 +4233,7 @@ export const github = $root.github = (() => {
                                         if (typeof message !== "object" || message === null)
                                             return "object expected";
                                         if (message.accountMeta != null && message.hasOwnProperty("accountMeta")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.verify(message.accountMeta);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.verify(message.accountMeta);
                                             if (error)
                                                 return "accountMeta." + error;
                                         }
@@ -4250,23 +4250,23 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a RbacServiceAccountSpec message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec} RbacServiceAccountSpec
                                      */
                                     RbacServiceAccountSpec.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec();
                                         if (object.accountMeta != null) {
                                             if (typeof object.accountMeta !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.accountMeta: object expected");
-                                            message.accountMeta = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.fromObject(object.accountMeta);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.accountMeta: object expected");
+                                            message.accountMeta = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.fromObject(object.accountMeta);
                                         }
                                         if (object.apps) {
                                             if (!Array.isArray(object.apps))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec.apps: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec.apps: array expected");
                                             message.apps = [];
                                             for (let i = 0; i < object.apps.length; ++i)
                                                 message.apps[i] = String(object.apps[i]);
@@ -4277,9 +4277,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a RbacServiceAccountSpec message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec} message RbacServiceAccountSpec
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec} message RbacServiceAccountSpec
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -4292,7 +4292,7 @@ export const github = $root.github = (() => {
                                         if (options.defaults)
                                             object.accountMeta = null;
                                         if (message.accountMeta != null && message.hasOwnProperty("accountMeta"))
-                                            object.accountMeta = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.AccountMeta.toObject(message.accountMeta, options);
+                                            object.accountMeta = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.AccountMeta.toObject(message.accountMeta, options);
                                         if (message.apps && message.apps.length) {
                                             object.apps = [];
                                             for (let j = 0; j < message.apps.length; ++j)
@@ -4304,7 +4304,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this RbacServiceAccountSpec to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -4315,7 +4315,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for RbacServiceAccountSpec
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -4324,7 +4324,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.RbacServiceAccountSpec";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.RbacServiceAccountSpec";
                                     };
 
                                     return RbacServiceAccountSpec;
@@ -4334,18 +4334,18 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a RoleRef.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IRoleRef
                                      * @property {string|null} [clusterRoleName] RoleRef clusterRoleName
                                      */
 
                                     /**
                                      * Constructs a new RoleRef.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a RoleRef.
                                      * @implements IRoleRef
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRoleRef=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRoleRef=} [properties] Properties to set
                                      */
                                     function RoleRef(properties) {
                                         if (properties)
@@ -4357,7 +4357,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * RoleRef clusterRoleName.
                                      * @member {string} clusterRoleName
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @instance
                                      */
                                     RoleRef.prototype.clusterRoleName = "";
@@ -4365,21 +4365,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new RoleRef instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRoleRef=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef} RoleRef instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRoleRef=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef} RoleRef instance
                                      */
                                     RoleRef.create = function create(properties) {
                                         return new RoleRef(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified RoleRef message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.verify|verify} messages.
+                                     * Encodes the specified RoleRef message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRoleRef} message RoleRef message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRoleRef} message RoleRef message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4392,11 +4392,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified RoleRef message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef.verify|verify} messages.
+                                     * Encodes the specified RoleRef message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRoleRef} message RoleRef message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRoleRef} message RoleRef message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4407,18 +4407,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RoleRef message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef} RoleRef
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef} RoleRef
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     RoleRef.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -4437,10 +4437,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RoleRef message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef} RoleRef
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef} RoleRef
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -4453,7 +4453,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a RoleRef message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4470,15 +4470,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a RoleRef message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef} RoleRef
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef} RoleRef
                                      */
                                     RoleRef.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef();
                                         if (object.clusterRoleName != null)
                                             message.clusterRoleName = String(object.clusterRoleName);
                                         return message;
@@ -4487,9 +4487,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a RoleRef message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef} message RoleRef
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef} message RoleRef
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -4507,7 +4507,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this RoleRef to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -4518,7 +4518,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for RoleRef
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -4527,7 +4527,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.RoleRef";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.RoleRef";
                                     };
 
                                     return RoleRef;
@@ -4537,19 +4537,19 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a RuleSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @interface IRuleSpec
-                                     * @property {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind|null} [groupVersionKind] RuleSpec groupVersionKind
+                                     * @property {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind|null} [groupVersionKind] RuleSpec groupVersionKind
                                      * @property {Array.<string>|null} [verbs] RuleSpec verbs
                                      */
 
                                     /**
                                      * Constructs a new RuleSpec.
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1
                                      * @classdesc Represents a RuleSpec.
                                      * @implements IRuleSpec
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRuleSpec=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRuleSpec=} [properties] Properties to set
                                      */
                                     function RuleSpec(properties) {
                                         this.verbs = [];
@@ -4561,8 +4561,8 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * RuleSpec groupVersionKind.
-                                     * @member {github.com.kzz45.discovery.pkg.apis.rbac.v1.IGroupVersionKind|null|undefined} groupVersionKind
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @member {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IGroupVersionKind|null|undefined} groupVersionKind
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @instance
                                      */
                                     RuleSpec.prototype.groupVersionKind = null;
@@ -4570,7 +4570,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * RuleSpec verbs.
                                      * @member {Array.<string>} verbs
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @instance
                                      */
                                     RuleSpec.prototype.verbs = $util.emptyArray;
@@ -4578,21 +4578,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new RuleSpec instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRuleSpec=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec} RuleSpec instance
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRuleSpec=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec} RuleSpec instance
                                      */
                                     RuleSpec.create = function create(properties) {
                                         return new RuleSpec(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified RuleSpec message. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.verify|verify} messages.
+                                     * Encodes the specified RuleSpec message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRuleSpec} message RuleSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRuleSpec} message RuleSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4600,7 +4600,7 @@ export const github = $root.github = (() => {
                                         if (!writer)
                                             writer = $Writer.create();
                                         if (message.groupVersionKind != null && Object.hasOwnProperty.call(message, "groupVersionKind"))
-                                            $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.encode(message.groupVersionKind, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                                            $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.encode(message.groupVersionKind, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                                         if (message.verbs != null && message.verbs.length)
                                             for (let i = 0; i < message.verbs.length; ++i)
                                                 writer.uint32(/* id 2, wireType 2 =*/18).string(message.verbs[i]);
@@ -4608,11 +4608,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified RuleSpec message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.verify|verify} messages.
+                                     * Encodes the specified RuleSpec message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.IRuleSpec} message RuleSpec message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.IRuleSpec} message RuleSpec message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4623,23 +4623,23 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RuleSpec message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec} RuleSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec} RuleSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     RuleSpec.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
                                             case 1: {
-                                                    message.groupVersionKind = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.decode(reader, reader.uint32());
+                                                    message.groupVersionKind = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.decode(reader, reader.uint32());
                                                     break;
                                                 }
                                             case 2: {
@@ -4659,10 +4659,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a RuleSpec message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec} RuleSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec} RuleSpec
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -4675,7 +4675,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a RuleSpec message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4684,7 +4684,7 @@ export const github = $root.github = (() => {
                                         if (typeof message !== "object" || message === null)
                                             return "object expected";
                                         if (message.groupVersionKind != null && message.hasOwnProperty("groupVersionKind")) {
-                                            let error = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.verify(message.groupVersionKind);
+                                            let error = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.verify(message.groupVersionKind);
                                             if (error)
                                                 return "groupVersionKind." + error;
                                         }
@@ -4701,23 +4701,23 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a RuleSpec message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec} RuleSpec
+                                     * @returns {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec} RuleSpec
                                      */
                                     RuleSpec.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec();
                                         if (object.groupVersionKind != null) {
                                             if (typeof object.groupVersionKind !== "object")
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.groupVersionKind: object expected");
-                                            message.groupVersionKind = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.fromObject(object.groupVersionKind);
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.groupVersionKind: object expected");
+                                            message.groupVersionKind = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.fromObject(object.groupVersionKind);
                                         }
                                         if (object.verbs) {
                                             if (!Array.isArray(object.verbs))
-                                                throw TypeError(".github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec.verbs: array expected");
+                                                throw TypeError(".github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec.verbs: array expected");
                                             message.verbs = [];
                                             for (let i = 0; i < object.verbs.length; ++i)
                                                 message.verbs[i] = String(object.verbs[i]);
@@ -4728,9 +4728,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a RuleSpec message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec} message RuleSpec
+                                     * @param {github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec} message RuleSpec
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -4743,7 +4743,7 @@ export const github = $root.github = (() => {
                                         if (options.defaults)
                                             object.groupVersionKind = null;
                                         if (message.groupVersionKind != null && message.hasOwnProperty("groupVersionKind"))
-                                            object.groupVersionKind = $root.github.com.kzz45.discovery.pkg.apis.rbac.v1.GroupVersionKind.toObject(message.groupVersionKind, options);
+                                            object.groupVersionKind = $root.github.com.kzz45.neverdown.pkg.apis.rbac.v1.GroupVersionKind.toObject(message.groupVersionKind, options);
                                         if (message.verbs && message.verbs.length) {
                                             object.verbs = [];
                                             for (let j = 0; j < message.verbs.length; ++j)
@@ -4755,7 +4755,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this RuleSpec to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -4766,7 +4766,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for RuleSpec
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec
+                                     * @memberof github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -4775,7 +4775,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.apis.rbac.v1.RuleSpec";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.apis.rbac.v1.RuleSpec";
                                     };
 
                                     return RuleSpec;
@@ -4794,7 +4794,7 @@ export const github = $root.github = (() => {
 
                         /**
                          * Namespace authx.
-                         * @memberof github.com.kzz45.discovery.pkg
+                         * @memberof github.com.kzz45.neverdown.pkg
                          * @namespace
                          */
                         const authx = {};
@@ -4803,7 +4803,7 @@ export const github = $root.github = (() => {
 
                             /**
                              * Namespace http.
-                             * @memberof github.com.kzz45.discovery.pkg.authx
+                             * @memberof github.com.kzz45.neverdown.pkg.authx
                              * @namespace
                              */
                             const http = {};
@@ -4812,7 +4812,7 @@ export const github = $root.github = (() => {
 
                                 /**
                                  * Namespace proto.
-                                 * @memberof github.com.kzz45.discovery.pkg.authx.http
+                                 * @memberof github.com.kzz45.neverdown.pkg.authx.http
                                  * @namespace
                                  */
                                 const proto = {};
@@ -4821,7 +4821,7 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a Context.
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto
                                      * @interface IContext
                                      * @property {string|null} [token] Context token
                                      * @property {boolean|null} [isAdmin] Context isAdmin
@@ -4830,11 +4830,11 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Constructs a new Context.
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto
                                      * @classdesc Represents a Context.
                                      * @implements IContext
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IContext=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IContext=} [properties] Properties to set
                                      */
                                     function Context(properties) {
                                         if (properties)
@@ -4846,7 +4846,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Context token.
                                      * @member {string} token
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @instance
                                      */
                                     Context.prototype.token = "";
@@ -4854,7 +4854,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Context isAdmin.
                                      * @member {boolean} isAdmin
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @instance
                                      */
                                     Context.prototype.isAdmin = false;
@@ -4862,7 +4862,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Context expireAt.
                                      * @member {number} expireAt
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @instance
                                      */
                                     Context.prototype.expireAt = 0;
@@ -4870,21 +4870,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new Context instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IContext=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Context} Context instance
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IContext=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Context} Context instance
                                      */
                                     Context.create = function create(properties) {
                                         return new Context(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified Context message. Does not implicitly {@link github.com.kzz45.discovery.pkg.authx.http.proto.Context.verify|verify} messages.
+                                     * Encodes the specified Context message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.authx.http.proto.Context.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IContext} message Context message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IContext} message Context message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4901,11 +4901,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified Context message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.authx.http.proto.Context.verify|verify} messages.
+                                     * Encodes the specified Context message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.authx.http.proto.Context.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IContext} message Context message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IContext} message Context message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -4916,18 +4916,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a Context message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Context} Context
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Context} Context
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     Context.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.authx.http.proto.Context();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Context();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -4954,10 +4954,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a Context message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Context} Context
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Context} Context
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -4970,7 +4970,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a Context message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4993,15 +4993,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a Context message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Context} Context
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Context} Context
                                      */
                                     Context.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.authx.http.proto.Context)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Context)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.authx.http.proto.Context();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Context();
                                         if (object.token != null)
                                             message.token = String(object.token);
                                         if (object.isAdmin != null)
@@ -5014,9 +5014,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a Context message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.Context} message Context
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.Context} message Context
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -5041,7 +5041,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this Context to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -5052,7 +5052,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for Context
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Context
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Context
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -5061,7 +5061,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.authx.http.proto.Context";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.authx.http.proto.Context";
                                     };
 
                                     return Context;
@@ -5071,7 +5071,7 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a Request.
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto
                                      * @interface IRequest
                                      * @property {string|null} [serviceRoute] Request serviceRoute
                                      * @property {Uint8Array|null} [data] Request data
@@ -5079,11 +5079,11 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Constructs a new Request.
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto
                                      * @classdesc Represents a Request.
                                      * @implements IRequest
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IRequest=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IRequest=} [properties] Properties to set
                                      */
                                     function Request(properties) {
                                         if (properties)
@@ -5095,7 +5095,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Request serviceRoute.
                                      * @member {string} serviceRoute
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @instance
                                      */
                                     Request.prototype.serviceRoute = "";
@@ -5103,7 +5103,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Request data.
                                      * @member {Uint8Array} data
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @instance
                                      */
                                     Request.prototype.data = $util.newBuffer([]);
@@ -5111,21 +5111,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new Request instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IRequest=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Request} Request instance
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IRequest=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Request} Request instance
                                      */
                                     Request.create = function create(properties) {
                                         return new Request(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified Request message. Does not implicitly {@link github.com.kzz45.discovery.pkg.authx.http.proto.Request.verify|verify} messages.
+                                     * Encodes the specified Request message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.authx.http.proto.Request.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IRequest} message Request message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IRequest} message Request message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -5140,11 +5140,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified Request message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.authx.http.proto.Request.verify|verify} messages.
+                                     * Encodes the specified Request message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.authx.http.proto.Request.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IRequest} message Request message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IRequest} message Request message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -5155,18 +5155,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a Request message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Request} Request
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Request} Request
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     Request.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.authx.http.proto.Request();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Request();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -5189,10 +5189,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a Request message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Request} Request
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Request} Request
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -5205,7 +5205,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a Request message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5225,15 +5225,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a Request message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Request} Request
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Request} Request
                                      */
                                     Request.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.authx.http.proto.Request)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Request)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.authx.http.proto.Request();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Request();
                                         if (object.serviceRoute != null)
                                             message.serviceRoute = String(object.serviceRoute);
                                         if (object.data != null)
@@ -5247,9 +5247,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a Request message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.Request} message Request
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.Request} message Request
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -5277,7 +5277,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this Request to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -5288,7 +5288,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for Request
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Request
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Request
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -5297,7 +5297,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.authx.http.proto.Request";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.authx.http.proto.Request";
                                     };
 
                                     return Request;
@@ -5307,7 +5307,7 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Properties of a Response.
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto
                                      * @interface IResponse
                                      * @property {string|null} [serviceRoute] Response serviceRoute
                                      * @property {number|null} [code] Response code
@@ -5317,11 +5317,11 @@ export const github = $root.github = (() => {
 
                                     /**
                                      * Constructs a new Response.
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto
                                      * @classdesc Represents a Response.
                                      * @implements IResponse
                                      * @constructor
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IResponse=} [properties] Properties to set
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IResponse=} [properties] Properties to set
                                      */
                                     function Response(properties) {
                                         if (properties)
@@ -5333,7 +5333,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Response serviceRoute.
                                      * @member {string} serviceRoute
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @instance
                                      */
                                     Response.prototype.serviceRoute = "";
@@ -5341,7 +5341,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Response code.
                                      * @member {number} code
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @instance
                                      */
                                     Response.prototype.code = 0;
@@ -5349,7 +5349,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Response message.
                                      * @member {string} message
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @instance
                                      */
                                     Response.prototype.message = "";
@@ -5357,7 +5357,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Response data.
                                      * @member {Uint8Array} data
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @instance
                                      */
                                     Response.prototype.data = $util.newBuffer([]);
@@ -5365,21 +5365,21 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a new Response instance using the specified properties.
                                      * @function create
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IResponse=} [properties] Properties to set
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Response} Response instance
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IResponse=} [properties] Properties to set
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Response} Response instance
                                      */
                                     Response.create = function create(properties) {
                                         return new Response(properties);
                                     };
 
                                     /**
-                                     * Encodes the specified Response message. Does not implicitly {@link github.com.kzz45.discovery.pkg.authx.http.proto.Response.verify|verify} messages.
+                                     * Encodes the specified Response message. Does not implicitly {@link github.com.kzz45.neverdown.pkg.authx.http.proto.Response.verify|verify} messages.
                                      * @function encode
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IResponse} message Response message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IResponse} message Response message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -5398,11 +5398,11 @@ export const github = $root.github = (() => {
                                     };
 
                                     /**
-                                     * Encodes the specified Response message, length delimited. Does not implicitly {@link github.com.kzz45.discovery.pkg.authx.http.proto.Response.verify|verify} messages.
+                                     * Encodes the specified Response message, length delimited. Does not implicitly {@link github.com.kzz45.neverdown.pkg.authx.http.proto.Response.verify|verify} messages.
                                      * @function encodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.IResponse} message Response message or plain object to encode
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.IResponse} message Response message or plain object to encode
                                      * @param {$protobuf.Writer} [writer] Writer to encode to
                                      * @returns {$protobuf.Writer} Writer
                                      */
@@ -5413,18 +5413,18 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a Response message from the specified reader or buffer.
                                      * @function decode
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                                      * @param {number} [length] Message length if known beforehand
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Response} Response
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Response} Response
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
                                     Response.decode = function decode(reader, length) {
                                         if (!(reader instanceof $Reader))
                                             reader = $Reader.create(reader);
-                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.discovery.pkg.authx.http.proto.Response();
+                                        let end = length === undefined ? reader.len : reader.pos + length, message = new $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Response();
                                         while (reader.pos < end) {
                                             let tag = reader.uint32();
                                             switch (tag >>> 3) {
@@ -5455,10 +5455,10 @@ export const github = $root.github = (() => {
                                     /**
                                      * Decodes a Response message from the specified reader or buffer, length delimited.
                                      * @function decodeDelimited
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
                                      * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Response} Response
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Response} Response
                                      * @throws {Error} If the payload is not a reader or valid buffer
                                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
                                      */
@@ -5471,7 +5471,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Verifies a Response message.
                                      * @function verify
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
                                      * @param {Object.<string,*>} message Plain object to verify
                                      * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5497,15 +5497,15 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a Response message from a plain object. Also converts values to their respective internal types.
                                      * @function fromObject
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
                                      * @param {Object.<string,*>} object Plain object
-                                     * @returns {github.com.kzz45.discovery.pkg.authx.http.proto.Response} Response
+                                     * @returns {github.com.kzz45.neverdown.pkg.authx.http.proto.Response} Response
                                      */
                                     Response.fromObject = function fromObject(object) {
-                                        if (object instanceof $root.github.com.kzz45.discovery.pkg.authx.http.proto.Response)
+                                        if (object instanceof $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Response)
                                             return object;
-                                        let message = new $root.github.com.kzz45.discovery.pkg.authx.http.proto.Response();
+                                        let message = new $root.github.com.kzz45.neverdown.pkg.authx.http.proto.Response();
                                         if (object.serviceRoute != null)
                                             message.serviceRoute = String(object.serviceRoute);
                                         if (object.code != null)
@@ -5523,9 +5523,9 @@ export const github = $root.github = (() => {
                                     /**
                                      * Creates a plain object from a Response message. Also converts values to other types if specified.
                                      * @function toObject
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
-                                     * @param {github.com.kzz45.discovery.pkg.authx.http.proto.Response} message Response
+                                     * @param {github.com.kzz45.neverdown.pkg.authx.http.proto.Response} message Response
                                      * @param {$protobuf.IConversionOptions} [options] Conversion options
                                      * @returns {Object.<string,*>} Plain object
                                      */
@@ -5559,7 +5559,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Converts this Response to JSON.
                                      * @function toJSON
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @instance
                                      * @returns {Object.<string,*>} JSON object
                                      */
@@ -5570,7 +5570,7 @@ export const github = $root.github = (() => {
                                     /**
                                      * Gets the default type url for Response
                                      * @function getTypeUrl
-                                     * @memberof github.com.kzz45.discovery.pkg.authx.http.proto.Response
+                                     * @memberof github.com.kzz45.neverdown.pkg.authx.http.proto.Response
                                      * @static
                                      * @param {string} [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
                                      * @returns {string} The default type url
@@ -5579,7 +5579,7 @@ export const github = $root.github = (() => {
                                         if (typeUrlPrefix === undefined) {
                                             typeUrlPrefix = "type.googleapis.com";
                                         }
-                                        return typeUrlPrefix + "/github.com.kzz45.discovery.pkg.authx.http.proto.Response";
+                                        return typeUrlPrefix + "/github.com.kzz45.neverdown.pkg.authx.http.proto.Response";
                                     };
 
                                     return Response;
@@ -5597,7 +5597,7 @@ export const github = $root.github = (() => {
                     return pkg;
                 })();
 
-                return discovery;
+                return neverdown;
             })();
 
             return kzz45;

@@ -5,8 +5,8 @@ import { getToken } from "@/utils/auth";
 import protoRoot from "@/proto/proto.js";
 import router from "@/router";
 
-const requestproto = protoRoot.github.com.kzz45.discovery.pkg.authx.http.proto;
-const rbacproto = protoRoot.github.com.kzz45.discovery.pkg.apis.rbac.v1;
+const requestproto = protoRoot.github.com.kzz45.neverdown.pkg.authx.http.proto;
+const rbacproto = protoRoot.github.com.kzz45.neverdown.pkg.apis.rbac.v1;
 
 async function getService() {
   const service = axios.create({

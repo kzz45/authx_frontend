@@ -1,5 +1,5 @@
 /*
-Copyright The Kubernetes Authors.
+Copyright 2024. The NeverDown Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,10 +18,10 @@ limitations under the License.
 
 syntax = "proto2";
 
-package github.com.kzz45.discovery.pkg.authx.http.proto;
+package github.com.kzz45.neverdown.pkg.authx.http.proto;
 
 // Package-wide variables from generator "generated".
-option go_package = "github.com/kzz45/discovery/pkg/authx/http/proto";
+option go_package = "github.com/kzz45/neverdown/pkg/authx/http/proto";
 
 message Context {
   optional string token = 1;
